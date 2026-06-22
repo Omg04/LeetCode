@@ -39,7 +39,7 @@ Hard          : 0  ░░░░░░░░░░
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy | Linked List | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
 | 1290 | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | 🟢 Easy | Linked List | [C++](./Linked-List/Convert Binary Number in a Linked List to Integer/Convert_Binary_Number_in_a_Linked_List_to_Integer.cpp) |
 | 3217 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | Linked List | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
-| ? | [Intersection of Two Linked Lists.](https://leetcode.com/problems/intersection-of-two-linked-lists./) | 🟡 Medium | Linked List | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
+| 160 | [Intersection of Two Linked Lists.](https://leetcode.com/problems/intersection-of-two-linked-lists./) | 🟡 Medium | Linked List | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
 
 ---
 
