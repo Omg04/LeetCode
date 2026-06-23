@@ -1,48 +1,99 @@
-# ⚡ LeetCode Journey
+# ⚡ LeetCode Journey — omg04
 
-> Solving one problem at a time — consistency over perfection.  
-> Last updated: **22 Jun 2026**
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
-![Solved](https://img.shields.io/badge/Solved-6-7F77DD?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-2-1D9E75?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-4-EF9F27?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)
-![Language](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+> Solving one problem at a time — consistency over perfection.
+> 🕐 Last auto-updated: **23 Jun 2026 — 08:54 UTC**
+
+![Solved](https://img.shields.io/badge/Total%20Solved-6-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-2-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-4-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
-## 📈 Stats Overview
+## 📊 Live Stats
+
+<!-- leetcard auto-updates from your LeetCode profile -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://leetcard.jacoblin.cool/omg04?theme=dark&font=Fira%20Code&ext=heatmap">
+  <source media="(prefers-color-scheme: light)" srcset="https://leetcard.jacoblin.cool/omg04?theme=light&font=Fira%20Code&ext=heatmap">
+  <img src="https://leetcard.jacoblin.cool/omg04?theme=light&font=Fira%20Code&ext=heatmap" alt="LeetCode Stats Card" width="480">
+</picture>
+
+---
+
+## 🔢 Overview
 
 ```
-Total Solved  : 6
-Easy          : 2  ██░░░░░░░░
-Medium        : 4  ████░░░░░░
-Hard          : 0  ░░░░░░░░░░
+  Total Solved :    6
+  Easy         :    2   █████░░░░░
+  Medium       :    4   ██████████
+  Hard         :    0   ░░░░░░░░░░
+  Topics       :    1
 ```
+
+---
+
+## 📅 Submission Heatmap (Full Year)
+
+![Heatmap](https://leetcard.jacoblin.cool/omg04?theme=light&font=Fira%20Code&ext=heatmap&width=600&border=0&radius=8)
+
+> Updates live from your LeetCode submission history.
 
 ---
 
 ## 📂 Progress by Topic
 
-| Topic | Solved | Progress |
-|-------|--------|----------|
-| [🔗 Linked List](./Linked-List/) | 6 | `███░░░░░░░░░░░░░░░░░░░░░░░░░` 6/50 (12%) |
+| | Topic | Solved | Progress |
+|--|-------|--------|----------|
+| 🔗 | [Linked List](./Linked-List/) | 6 | `███░░░░░░░░░░░░░░░░░░░░░` **6/50** (12%) |
+| 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
+| 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
+| 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
+| 🧮 | Dynamic Programming | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/60** (0%) |
+| 📊 | Graphs | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
+| 📚 | Stack Queue | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/30** (0%) |
+| 🏔️ | Heap | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/25** (0%) |
+| 🔍 | Binary Search | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/30** (0%) |
+| 🔄 | Backtracking | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/25** (0%) |
 
 ---
 
-## 🗂️ All Problems
+## 🗺️ DSA Roadmap
 
-| # | Problem | Difficulty | Topic | Solution |
-|---|---------|-----------|-------|----------|
-| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | Linked List | [C++](./Linked-List/Add Two Numbers/Add_Two_Numbers.cpp) |
-| 86 | [Partition List](https://leetcode.com/problems/partition-list/) | 🟡 Medium | Linked List | [C++](./Linked-List/Partition List/Partition_List.cpp) |
-| 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy | Linked List | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
-| 1290 | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | 🟢 Easy | Linked List | [C++](./Linked-List/Convert Binary Number in a Linked List to Integer/Convert_Binary_Number_in_a_Linked_List_to_Integer.cpp) |
-| 3217 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | Linked List | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
-| 160 | [Intersection of Two Linked Lists.](https://leetcode.com/problems/intersection-of-two-linked-lists./) | 🟡 Medium | Linked List | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
+| ✅ Linked List | 🔄 Arrays | ⏳ Stack Queue | ⏳ Trees | ⏳ Graphs | ⏳ Dynamic Programming |
+|---|---|---|---|---|---|
+
+---
+
+## 🗂️ Problems Solved
+
+<details>
+<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 6/50 solved &nbsp;|&nbsp; 🟢 2 Easy · 🟡 4 Medium</summary>
+
+```
+Progress: [██░░░░░░░░░░░░░░░░░░ 12%]
+```
+
+| # | Problem | Difficulty | Solution |
+|---|---------|-----------|----------|
+| `2` | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | [C++](./Linked-List/Add Two Numbers/Add_Two_Numbers.cpp) |
+| `86` | [Partition List](https://leetcode.com/problems/partition-list/) | 🟡 Medium | [C++](./Linked-List/Partition List/Partition_List.cpp) |
+| `876` | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
+| `1290` | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | 🟢 Easy | [C++](./Linked-List/Convert Binary Number in a Linked List to Integer/Convert_Binary_Number_in_a_Linked_List_to_Integer.cpp) |
+| `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
+| `?` | [Intersection of Two Linked Lists.](https://leetcode.com/problems/intersection-of-two-linked-lists./) | 🟡 Medium | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
+
+</details>
 
 ---
 
 <div align="center">
+
+  <img src="https://img.shields.io/badge/Keep%20Going-💪-1D9E75?style=flat-square" alt="Keep Going">
+
+  <br><br>
   <i>"The secret of getting ahead is getting started." — Mark Twain</i>
+
+  <br><br>
+  <sub>⚡ Auto-generated by GitHub Actions on every push · <a href="./.github/scripts/generate_readme.py">view script</a></sub>
+
 </div>
