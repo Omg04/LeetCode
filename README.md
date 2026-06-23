@@ -3,9 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **23 Jun 2026 — 08:54 UTC**
+> 🕐 Last auto-updated: **23 Jun 2026 — 09:22 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-6-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-2-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-4-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-6-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-2-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-4-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -29,14 +29,6 @@
   Hard         :    0   ░░░░░░░░░░
   Topics       :    1
 ```
-
----
-
-## 📅 Submission Heatmap (Full Year)
-
-![Heatmap](https://leetcard.jacoblin.cool/omg04?theme=light&font=Fira%20Code&ext=heatmap&width=600&border=0&radius=8)
-
-> Updates live from your LeetCode submission history.
 
 ---
 
