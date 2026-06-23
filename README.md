@@ -3,9 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **23 Jun 2026 — 12:50 UTC**
+> 🕐 Last auto-updated: **23 Jun 2026 — 13:20 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-7-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-1-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-6-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-8-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-1-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-7-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,9 +23,9 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :    7
-  Easy         :    1   ██░░░░░░░░
-  Medium       :    6   ██████████
+  Total Solved :    8
+  Easy         :    1   █░░░░░░░░░
+  Medium       :    7   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    1
 ```
@@ -36,7 +36,7 @@
 
 | | Topic | Solved | Progress |
 |--|-------|--------|----------|
-| 🔗 | [Linked List](./Linked-List/) | 7 | `███░░░░░░░░░░░░░░░░░░░░░` **7/50** (14%) |
+| 🔗 | [Linked List](./Linked-List/) | 8 | `████░░░░░░░░░░░░░░░░░░░░` **8/50** (16%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -59,10 +59,10 @@
 ## 🗂️ Problems Solved
 
 <details>
-<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 7/50 solved &nbsp;|&nbsp; 🟢 1 Easy · 🟡 6 Medium</summary>
+<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 8/50 solved &nbsp;|&nbsp; 🟢 1 Easy · 🟡 7 Medium</summary>
 
 ```
-Progress: [███░░░░░░░░░░░░░░░░░ 14%]
+Progress: [███░░░░░░░░░░░░░░░░░ 16%]
 ```
 
 | # | Problem | Difficulty | Solution |
@@ -72,8 +72,9 @@ Progress: [███░░░░░░░░░░░░░░░░░ 14%]
 | `92` | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 🟡 Medium | [C++](./Linked-List/Reverse Linked List II/Reverse_Linked_List_II.cpp) |
 | `1290` | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | 🟢 Easy | [C++](./Linked-List/Convert Binary Number in a Linked List to Integer/Convert_Binary_Number_in_a_Linked_List_to_Integer.cpp) |
 | `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
-| `160` | [Intersection of Two Linked Lists.](https://leetcode.com/problems/intersection-of-two-linked-lists./) | 🟡 Medium | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
-| `876` | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟡 Medium | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
+| `?` | [Intersection of Two Linked Lists.](https://leetcode.com/problems/intersection-of-two-linked-lists./) | 🟡 Medium | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
+| `?` | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟡 Medium | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
+| `?` | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 🟡 Medium | [C++](./Linked-List/Remove Nth Node From End of List/Remove_Nth_Node_From_End_of_List.cpp) |
 
 </details>
 
