@@ -7,7 +7,7 @@ import urllib.request
 import json
 
 def fetch_leetcode_stats(username: str) -> dict:
-   """Fetch stats via alfa-leetcode-api (public proxy, works from CI)."""
+    """Fetch stats via alfa-leetcode-api (public proxy, works from CI)."""
     try:
         url = f"https://alfa-leetcode-api.onrender.com/{username}/solved"
         with urllib.request.urlopen(url, timeout=15) as r:
@@ -30,7 +30,7 @@ def fetch_leetcode_stats(username: str) -> dict:
         print(f"⚠️  LeetCode API failed: {e} — using repo counts as fallback")
         return {"total": 0, "easy": 0, "medium": 0, "hard": 0, "streak": 0}
 
-# ── Config ──────────────────────────────────────────────────────────────────────
+# ── Config ─────────────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
@@ -90,7 +90,7 @@ ROADMAP = [
     ("Dynamic-Programming", "⏳"),
 ]
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
+# ── Helpers ─────────────────────────────────────────────────────────────
 
 def shields(label, message, color, style="for-the-badge", extra=""):
     l = label.replace(" ", "%20").replace("+", "%2B")
@@ -109,7 +109,7 @@ def ascii_bar(n, total=10):
 def lc_slug(name):
     return name.lower().replace(" ", "-").replace("_", "-")
 
-# ── Scan repo ─────────────────────────────────────────────────────────────────
+# ── Scan repo ────────────────────────────────────────────────────────────
 
 def scan_problems():
     topics = defaultdict(list)
@@ -139,7 +139,7 @@ def scan_problems():
 
     return topics
 
-# ── README builder ────────────────────────────────────────────────────────────
+# ── README builder ──────────────────────────────────────────────────────────
 
 def build(topics):
     lc     = fetch_leetcode_stats(LEETCODE_USERNAME)
@@ -152,7 +152,7 @@ def build(topics):
 
     L = []   # lines
 
-    # ── Hero banner ───────────────────────────────────────────────────────────
+    # ── Hero banner ──────────────────────────────────────────────────────────
     typing_url = (
         "https://readme-typing-svg.demolab.com"
         "?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines="
@@ -249,7 +249,7 @@ def build(topics):
 
     L += ["", "---", ""]
 
-    # ── DSA Roadmap ───────────────────────────────────────────────────────────
+    # ── DSA Roadmap ──────────────────────────────────────────────────────────
     L += ["## 🗺️ DSA Roadmap", ""]
     rm_cols = " | ".join(
         f"{icon} {t.replace('-', ' ')}"
@@ -315,7 +315,7 @@ def build(topics):
 
     L += ["---", ""]
 
-    # ── Footer ────────────────────────────────────────────────────────────────
+    # ── Footer ────────────────────────────────────────────────────────────
     L += [
         '<div align="center">',
         "",
@@ -333,7 +333,7 @@ def build(topics):
 
     return "\n".join(L)
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# ── Main ──────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     topics = scan_problems()
