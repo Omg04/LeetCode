@@ -8,7 +8,6 @@ import json
 
 def fetch_leetcode_stats(username: str) -> dict:
    """Fetch stats via alfa-leetcode-api (public proxy, works from CI)."""
-    import urllib.request, json
     try:
         url = f"https://alfa-leetcode-api.onrender.com/{username}/solved"
         with urllib.request.urlopen(url, timeout=15) as r:
