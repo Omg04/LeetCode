@@ -30,6 +30,38 @@ def fetch_leetcode_stats(username: str) -> dict:
         print(f"⚠️  LeetCode API failed: {e} — using repo counts as fallback")
         return {"total": 0, "easy": 0, "medium": 0, "hard": 0, "streak": 0}
 
+def fetch_problem_info(folder_name: str) -> tuple:
+    """
+    Auto-fetch problem number and difficulty from LeetCode
+    using the problem slug. No manual DIFFICULTY_MAP entry needed.
+    
+    Returns: ("Easy"/"Medium"/"Hard", "123") or ("Medium", "?") on failure.
+    """
+    slug = folder_name.lower().replace(" ", "-").replace("_", "-").strip().rstrip(".")
+    url  = "https://leetcode.com/graphql"
+    query = """
+    query getQuestion($titleSlug: String!) {
+      question(titleSlug: $titleSlug) {
+        questionFrontendId
+        difficulty
+      }
+    }
+    """
+    payload = json.dumps({"query": query, "variables": {"titleSlug": slug}}).encode()
+    req = urllib.request.Request(url, data=payload, headers={
+        "Content-Type": "application/json",
+        "User-Agent":   "Mozilla/5.0",
+        "Referer":      "https://leetcode.com",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=10) as r:
+            q = json.loads(r.read())["data"]["question"]
+            if q:
+                return (q["difficulty"], q["questionFrontendId"])
+    except Exception:
+        pass
+    return ("Medium", "?")
+    
 # ── Config ─────────────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -49,6 +81,10 @@ DIFFICULTY_MAP = {
     "convert binary number in a linked list to integer": ("Easy","1290"),
     "delete nodes from linked list present in array": ("Medium", "3217"),
 }
+DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
+def normalize(name: str) -> str:
+    """Convert any folder name to the standard lookup key."""
+    return name.lower().replace("_", " ").replace("-", " ").strip().rstrip(".")
 
 # Target problem counts per topic (used for progress bars)
 TOPIC_GOALS = {
@@ -125,8 +161,12 @@ def scan_problems():
             if not cpp_files: continue
 
             name = prob_dir.name
-            key  = name.lower().replace("_", " ").replace("-", " ").strip()
-            diff, num = DIFFICULTY_MAP.get(key, ("Medium", "?"))
+            key  = normalize(name)
+            if key in DIFFICULTY_MAP:
+                diff, num = DIFFICULTY_MAP[key]
+            else:
+                diff, num = fetch_problem_info(name)  # auto-fetch from LeetCode!
+                DIFFICULTY_MAP[key] = (diff, num)     # cache it for this run
             rel  = str(cpp_files[0].relative_to(REPO_ROOT)).replace("\\", "/")
 
             topics[topic_dir.name].append({
