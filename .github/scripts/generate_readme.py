@@ -34,7 +34,7 @@ def fetch_leetcode_stats(username: str) -> dict:
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-LEETCODE_USERNAME = "omg04"   # ← your LeetCode username
+LEETCODE_USERNAME = "Treasure12"   # ← your LeetCode username
 GITHUB_USERNAME   = "omg04"   # ← your GitHub username
 
 # Add new problems here as you solve them:
