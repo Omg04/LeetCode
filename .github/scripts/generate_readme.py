@@ -3,7 +3,60 @@ from pathlib import Path
 from datetime import datetime, timezone
 from collections import defaultdict
 
-# ── Config ────────────────────────────────────────────────────────────────────
+import urllib.request
+import json
+
+def fetch_leetcode_stats(username: str) -> dict:
+    """
+    Fetch real solved counts and streak from LeetCode's public GraphQL API.
+    Returns dict with keys: total, easy, medium, hard, streak.
+    Falls back to zeros if the request fails (so the script never crashes).
+    """
+    url = "https://leetcode.com/graphql"
+    query = """
+    query getUserProfile($username: String!) {
+      matchedUser(username: $username) {
+        submitStats: submitStatsGlobal {
+          acSubmissionNum {
+            difficulty
+            count
+          }
+        }
+        userCalendar {
+          streak
+        }
+      }
+    }
+    """
+    payload = json.dumps({"query": query, "variables": {"username": username}}).encode()
+    req = urllib.request.Request(
+        url,
+        data=payload,
+        headers={
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://leetcode.com",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())["data"]["matchedUser"]
+            counts = {
+                item["difficulty"]: item["count"]
+                for item in data["submitStats"]["acSubmissionNum"]
+            }
+            return {
+                "total":  counts.get("All", 0),
+                "easy":   counts.get("Easy", 0),
+                "medium": counts.get("Medium", 0),
+                "hard":   counts.get("Hard", 0),
+                "streak": data["userCalendar"]["streak"],
+            }
+    except Exception as e:
+        print(f"⚠️  LeetCode API failed: {e} — using repo counts as fallback")
+        return {"total": 0, "easy": 0, "medium": 0, "hard": 0, "streak": 0}
+
+# ── Config ──────────────────────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
@@ -115,10 +168,12 @@ def scan_problems():
 # ── README builder ────────────────────────────────────────────────────────────
 
 def build(topics):
-    total  = sum(len(v) for v in topics.values())
-    easy   = sum(1 for v in topics.values() for p in v if p["diff"] == "Easy")
-    medium = sum(1 for v in topics.values() for p in v if p["diff"] == "Medium")
-    hard   = sum(1 for v in topics.values() for p in v if p["diff"] == "Hard")
+    lc     = fetch_leetcode_stats(LEETCODE_USERNAME)
+    total  = lc["total"]  or sum(len(v) for v in topics.values())
+    easy   = lc["easy"]   or sum(1 for v in topics.values() for p in v if p["diff"] == "Easy")
+    medium = lc["medium"] or sum(1 for v in topics.values() for p in v if p["diff"] == "Medium")
+    hard   = lc["hard"]   or sum(1 for v in topics.values() for p in v if p["diff"] == "Hard")
+    streak = lc["streak"]
     now    = datetime.now(timezone.utc).strftime("%d %b %Y — %H:%M UTC")
 
     L = []   # lines
@@ -149,6 +204,7 @@ def build(topics):
         f"![Easy]({shields('Easy', easy, '1D9E75')})"
         f"![Medium]({shields('Medium', medium, 'EF9F27')})"
         f"![Hard]({shields('Hard', hard, 'E24B4A')})"
+        f"![Streak]({shields('Streak', f'{streak} days', 'FF6B35')})"
         f"![Language]({shields('Language', 'C++', '00599C', extra='&logo=cplusplus&logoColor=white')})"
         f"![Status]({shields('Status', 'Active', '1D9E75')})",
         "",
@@ -190,22 +246,6 @@ def build(topics):
         f"  Hard         : {hard:>4}   {ascii_bar(hard,  max(easy,medium,hard,1))}",
         f"  Topics       : {len(topics):>4}",
         "```",
-        "",
-        "---",
-        "",
-    ]
-
-    # ── Full-year heatmap (via leetcard ext) ──────────────────────────────────
-    heatmap_url = (
-        f"https://leetcard.jacoblin.cool/{LEETCODE_USERNAME}"
-        "?theme=light&font=Fira%20Code&ext=heatmap&width=600&border=0&radius=8"
-    )
-    L += [
-        "## 📅 Submission Heatmap (Full Year)",
-        "",
-        f"![Heatmap]({heatmap_url})",
-        "",
-        "> Updates live from your LeetCode submission history.",
         "",
         "---",
         "",
