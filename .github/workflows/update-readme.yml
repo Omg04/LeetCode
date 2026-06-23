@@ -26,7 +26,7 @@ jobs:
 
       - name: Generate README
         run: python .github/scripts/generate_readme.py
-        timeout-minutes:3
+        timeout-minutes: 3
 
       - name: Commit & push if changed
         run: |
