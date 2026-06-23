@@ -1,201 +1,333 @@
 import os
-import re
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from collections import defaultdict
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+LEETCODE_USERNAME = "omg04"   # ← your LeetCode username
+GITHUB_USERNAME   = "omg04"   # ← your GitHub username
+
+# Add new problems here as you solve them:
+# "problem folder name (lowercase)" : ("Difficulty", "LC number")
 DIFFICULTY_MAP = {
-    # Linked List
-    "add two numbers": ("Medium", "2"),
-    "partition list": ("Medium", "86"),
-    "intersection of two linked lists": ("Easy", "160"),
-    "intersection_of_two_linked_lists": ("Easy", "160"),
-    "middle of the linked list": ("Easy", "876"),
-    "middle_of_the_linked_list": ("Easy", "876"),
-    "convert binary number in a linked list to integer": ("Easy", "1290"),
+    "add two numbers":                                ("Medium", "2"),
+    "partition list":                                 ("Medium", "86"),
+    "intersection of two linked lists":               ("Easy",   "160"),
+    "intersection_of_two_linked_lists":               ("Easy",   "160"),
+    "middle of the linked list":                      ("Easy",   "876"),
+    "middle_of_the_linked_list":                      ("Easy",   "876"),
+    "convert binary number in a linked list to integer": ("Easy","1290"),
     "delete nodes from linked list present in array": ("Medium", "3217"),
 }
 
+# Target problem counts per topic (used for progress bars)
 TOPIC_GOALS = {
-    "Linked-List": 50,
-    "Arrays": 50,
-    "Strings": 40,
-    "Trees": 40,
-    "Dynamic Programming": 60,
-    "Graphs": 40,
-    "Stack & Queue": 30,
-    "Heap": 25,
-    "Binary Search": 30,
-    "Backtracking": 25,
+    "Linked-List":         50,
+    "Arrays":              50,
+    "Strings":             40,
+    "Trees":               40,
+    "Dynamic-Programming": 60,
+    "Graphs":              40,
+    "Stack-Queue":         30,
+    "Heap":                25,
+    "Binary-Search":       30,
+    "Backtracking":        25,
 }
 
-DIFFICULTY_EMOJI = {"Easy": "🟢", "Medium": "🟡", "Hard": "🔴"}
-
-TOPIC_LINKS = {
-    "Linked-List": "./Linked-List/",
+TOPIC_EMOJI = {
+    "Linked-List":         "🔗",
+    "Arrays":              "📦",
+    "Strings":             "🔤",
+    "Trees":               "🌲",
+    "Dynamic-Programming": "🧮",
+    "Graphs":              "📊",
+    "Stack-Queue":         "📚",
+    "Heap":                "🏔️",
+    "Binary-Search":       "🔍",
+    "Backtracking":        "🔄",
 }
+
+DIFF_EMOJI  = {"Easy": "🟢", "Medium": "🟡", "Hard": "🔴"}
+DIFF_BADGE  = {"Easy": "brightgreen", "Medium": "orange", "Hard": "red"}
+
+# DSA roadmap order (add topics here as you start them)
+ROADMAP = [
+    ("Linked-List",         "✅"),
+    ("Arrays",              "🔄"),
+    ("Stack-Queue",         "⏳"),
+    ("Trees",               "⏳"),
+    ("Graphs",              "⏳"),
+    ("Dynamic-Programming", "⏳"),
+]
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def shields(label, message, color, style="for-the-badge", extra=""):
+    l = label.replace(" ", "%20").replace("+", "%2B")
+    m = str(message).replace(" ", "%20").replace("+", "%2B")
+    return f"https://img.shields.io/badge/{l}-{m}-{color}?style={style}{extra}"
+
+def progress_bar(solved, goal, width=24):
+    filled = round(width * solved / goal) if goal else 0
+    pct    = round(100 * solved / goal)   if goal else 0
+    return f"`{'█' * filled}{'░' * (width - filled)}` **{solved}/{goal}** ({pct}%)"
+
+def ascii_bar(n, total=10):
+    filled = min(round(n / total * 10), 10)
+    return "█" * filled + "░" * (10 - filled)
+
+def lc_slug(name):
+    return name.lower().replace(" ", "-").replace("_", "-")
 
 # ── Scan repo ─────────────────────────────────────────────────────────────────
 
 def scan_problems():
     topics = defaultdict(list)
-    skip_dirs = {".git", ".github", "__pycache__"}
+    skip   = {".git", ".github", "__pycache__", "node_modules"}
 
     for topic_dir in sorted(REPO_ROOT.iterdir()):
-        if not topic_dir.is_dir():
-            continue
-        if topic_dir.name.startswith(".") or topic_dir.name in skip_dirs:
-            continue
+        if not topic_dir.is_dir(): continue
+        if topic_dir.name.startswith(".") or topic_dir.name in skip: continue
 
-        for problem_dir in sorted(topic_dir.iterdir()):
-            if not problem_dir.is_dir():
-                continue
+        for prob_dir in sorted(topic_dir.iterdir()):
+            if not prob_dir.is_dir(): continue
+            cpp_files = list(prob_dir.glob("*.cpp"))
+            if not cpp_files: continue
 
-            # Find a .cpp file
-            cpp_files = list(problem_dir.glob("*.cpp"))
-            if not cpp_files:
-                continue
-
-            problem_name = problem_dir.name
-            key = problem_name.lower().replace("_", " ").replace("-", " ").strip()
-
+            name = prob_dir.name
+            key  = name.lower().replace("_", " ").replace("-", " ").strip()
             diff, num = DIFFICULTY_MAP.get(key, ("Medium", "?"))
-            cpp_rel = cpp_files[0].relative_to(REPO_ROOT)
+            rel  = str(cpp_files[0].relative_to(REPO_ROOT)).replace("\\", "/")
 
             topics[topic_dir.name].append({
-                "num": num,
-                "name": problem_name.replace("_", " "),
-                "difficulty": diff,
-                "topic": topic_dir.name.replace("-", " "),
-                "path": str(cpp_rel).replace("\\", "/"),
+                "num":   num,
+                "name":  name.replace("_", " "),
+                "diff":  diff,
+                "topic": topic_dir.name,
+                "path":  rel,
             })
 
     return topics
 
-# ── Build README sections ──────────────────────────────────────────────────────
+# ── README builder ────────────────────────────────────────────────────────────
 
-def make_progress_bar(solved, goal, width=28):
-    filled = round(width * solved / goal) if goal else 0
-    bar = "█" * filled + "░" * (width - filled)
-    pct = round(100 * solved / goal) if goal else 0
-    return f"`{bar}` {solved}/{goal} ({pct}%)"
+def build(topics):
+    total  = sum(len(v) for v in topics.values())
+    easy   = sum(1 for v in topics.values() for p in v if p["diff"] == "Easy")
+    medium = sum(1 for v in topics.values() for p in v if p["diff"] == "Medium")
+    hard   = sum(1 for v in topics.values() for p in v if p["diff"] == "Hard")
+    now    = datetime.now(timezone.utc).strftime("%d %b %Y — %H:%M UTC")
 
-def make_shields_url(label, message, color, style="for-the-badge"):
-    label_enc = label.replace(" ", "%20")
-    message_enc = str(message).replace(" ", "%20")
-    return f"https://img.shields.io/badge/{label_enc}-{message_enc}-{color}?style={style}"
+    L = []   # lines
 
-def generate_readme(topics):
-    total = sum(len(v) for v in topics.values())
-    easy = sum(1 for v in topics.values() for p in v if p["difficulty"] == "Easy")
-    medium = sum(1 for v in topics.values() for p in v if p["difficulty"] == "Medium")
-    hard = sum(1 for v in topics.values() for p in v if p["difficulty"] == "Hard")
+    # ── Hero banner ───────────────────────────────────────────────────────────
+    typing_url = (
+        "https://readme-typing-svg.demolab.com"
+        "?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines="
+        "Solving+problems+one+commit+at+a+time...;"
+        "Language%3A+C%2B%2B+%7C+Focus%3A+DSA;"
+        "Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;"
+        "Consistency+is+the+key+%F0%9F%94%91"
+    )
 
-    now = datetime.utcnow().strftime("%d %b %Y")
-
-    lines = []
-
-    # Header
-    lines += [
-        "# ⚡ LeetCode Journey",
+    L += [
+        "# ⚡ LeetCode Journey — omg04",
         "",
-        "> Solving one problem at a time — consistency over perfection.  ",
-        f"> Last updated: **{now}**",
+        f"[![Typing SVG]({typing_url})](https://github.com/{GITHUB_USERNAME})",
+        "",
+        "> Solving one problem at a time — consistency over perfection.",
+        f"> 🕐 Last auto-updated: **{now}**",
         "",
     ]
 
-    # Badges
-    lines += [
-        f"![Solved]({make_shields_url('Solved', total, '7F77DD')})",
-        f"![Easy]({make_shields_url('Easy', easy, '1D9E75')})",
-        f"![Medium]({make_shields_url('Medium', medium, 'EF9F27')})",
-        f"![Hard]({make_shields_url('Hard', hard, 'E24B4A')})",
-        f"![Language]({make_shields_url('Language', 'C++', '00599C')}&logo=cplusplus&logoColor=white)",
+    # ── Shields badges ────────────────────────────────────────────────────────
+    L += [
+        f"![Solved]({shields('Total Solved', total, '7F77DD')})"
+        f"![Easy]({shields('Easy', easy, '1D9E75')})"
+        f"![Medium]({shields('Medium', medium, 'EF9F27')})"
+        f"![Hard]({shields('Hard', hard, 'E24B4A')})"
+        f"![Language]({shields('Language', 'C++', '00599C', extra='&logo=cplusplus&logoColor=white')})"
+        f"![Status]({shields('Status', 'Active', '1D9E75')})",
         "",
         "---",
         "",
     ]
 
-    # Stats overview
-    easy_bar = "█" * easy + "░" * max(0, 10 - easy)
-    medium_bar = "█" * medium + "░" * max(0, 10 - medium)
-    hard_bar = "█" * hard + "░" * max(0, 10 - hard)
+    # ── Live LeetCode stats card ──────────────────────────────────────────────
+    card_light = (
+        f"https://leetcard.jacoblin.cool/{LEETCODE_USERNAME}"
+        "?theme=light&font=Fira%20Code&ext=heatmap"
+    )
+    card_dark = (
+        f"https://leetcard.jacoblin.cool/{LEETCODE_USERNAME}"
+        "?theme=dark&font=Fira%20Code&ext=heatmap"
+    )
+    L += [
+        "## 📊 Live Stats",
+        "",
+        "<!-- leetcard auto-updates from your LeetCode profile -->",
+        f'<picture>',
+        f'  <source media="(prefers-color-scheme: dark)"  srcset="{card_dark}">',
+        f'  <source media="(prefers-color-scheme: light)" srcset="{card_light}">',
+        f'  <img src="{card_light}" alt="LeetCode Stats Card" width="480">',
+        f'</picture>',
+        "",
+        "---",
+        "",
+    ]
 
-    lines += [
-        "## 📈 Stats Overview",
+    # ── Quick stats table ─────────────────────────────────────────────────────
+    L += [
+        "## 🔢 Overview",
         "",
         "```",
-        f"Total Solved  : {total}",
-        f"Easy          : {easy}  {easy_bar}",
-        f"Medium        : {medium}  {medium_bar}",
-        f"Hard          : {hard}  {hard_bar}",
+        f"  Total Solved : {total:>4}",
+        f"  Easy         : {easy:>4}   {ascii_bar(easy,  max(easy,medium,hard,1))}",
+        f"  Medium       : {medium:>4}   {ascii_bar(medium,max(easy,medium,hard,1))}",
+        f"  Hard         : {hard:>4}   {ascii_bar(hard,  max(easy,medium,hard,1))}",
+        f"  Topics       : {len(topics):>4}",
         "```",
         "",
         "---",
         "",
     ]
 
-    # Progress by topic
-    lines += [
+    # ── Full-year heatmap (via leetcard ext) ──────────────────────────────────
+    heatmap_url = (
+        f"https://leetcard.jacoblin.cool/{LEETCODE_USERNAME}"
+        "?theme=light&font=Fira%20Code&ext=heatmap&width=600&border=0&radius=8"
+    )
+    L += [
+        "## 📅 Submission Heatmap (Full Year)",
+        "",
+        f"![Heatmap]({heatmap_url})",
+        "",
+        "> Updates live from your LeetCode submission history.",
+        "",
+        "---",
+        "",
+    ]
+
+    # ── Progress by topic ─────────────────────────────────────────────────────
+    L += [
         "## 📂 Progress by Topic",
         "",
-        "| Topic | Solved | Progress |",
-        "|-------|--------|----------|",
+        "| | Topic | Solved | Progress |",
+        "|--|-------|--------|----------|",
     ]
     for topic, problems in sorted(topics.items()):
-        goal = TOPIC_GOALS.get(topic, 50)
-        bar = make_progress_bar(len(problems), goal)
-        link = TOPIC_LINKS.get(topic, f"./{topic}/")
+        goal  = TOPIC_GOALS.get(topic, 50)
+        emoji = TOPIC_EMOJI.get(topic, "📁")
+        bar   = progress_bar(len(problems), goal)
         label = topic.replace("-", " ")
-        lines.append(f"| [🔗 {label}]({link}) | {len(problems)} | {bar} |")
+        L.append(f"| {emoji} | [{label}](./{topic}/) | {len(problems)} | {bar} |")
 
-    lines += ["", "---", ""]
+    # Add placeholder rows for topics not yet started
+    for topic, goal in TOPIC_GOALS.items():
+        if topic not in topics:
+            emoji = TOPIC_EMOJI.get(topic, "📁")
+            label = topic.replace("-", " ")
+            bar   = progress_bar(0, goal)
+            L.append(f"| {emoji} | {label} | 0 | {bar} |")
 
-    # Full problem table
-    lines += [
-        "## 🗂️ All Problems",
-        "",
-        "| # | Problem | Difficulty | Topic | Solution |",
-        "|---|---------|-----------|-------|----------|",
-    ]
+    L += ["", "---", ""]
 
-    all_problems = sorted(
+    # ── DSA Roadmap ───────────────────────────────────────────────────────────
+    L += ["## 🗺️ DSA Roadmap", ""]
+    rm_cols = " | ".join(
+        f"{icon} {t.replace('-', ' ')}"
+        for t, icon in ROADMAP
+    )
+    L += [f"| {rm_cols} |"]
+    L += ["|" + "|".join(["---"] * len(ROADMAP)) + "|"]
+    L += ["", "---", ""]
+
+    # ── Collapsible topic folders ─────────────────────────────────────────────
+    L += ["## 🗂️ Problems Solved", ""]
+
+    all_problems_flat = sorted(
         [p for v in topics.values() for p in v],
         key=lambda x: (x["num"] == "?", int(x["num"]) if x["num"] != "?" else 9999)
     )
 
-    for p in all_problems:
-        emoji = DIFFICULTY_EMOJI.get(p["difficulty"], "⬜")
-        name_slug = p["name"].replace(" ", "%20").replace("_", "%20")
-        lc_url = f"https://leetcode.com/problems/{p['name'].lower().replace(' ', '-').replace('_', '-')}/"
-        lines.append(
-            f"| {p['num']} | [{p['name']}]({lc_url}) "
-            f"| {emoji} {p['difficulty']} "
-            f"| {p['topic']} "
-            f"| [C++](./{p['path']}) |"
-        )
+    for topic, problems in sorted(topics.items()):
+        emoji    = TOPIC_EMOJI.get(topic, "📁")
+        label    = topic.replace("-", " ")
+        goal     = TOPIC_GOALS.get(topic, 50)
+        solved   = len(problems)
+        pct      = round(100 * solved / goal) if goal else 0
+        e_count  = sum(1 for p in problems if p["diff"] == "Easy")
+        m_count  = sum(1 for p in problems if p["diff"] == "Medium")
+        h_count  = sum(1 for p in problems if p["diff"] == "Hard")
+        bar      = f"{'█' * round(20*pct/100)}{'░' * (20 - round(20*pct/100))} {pct}%"
 
-    lines += ["", "---", ""]
+        diff_summary = " · ".join(filter(None, [
+            f"🟢 {e_count} Easy"   if e_count  else "",
+            f"🟡 {m_count} Medium" if m_count  else "",
+            f"🔴 {h_count} Hard"   if h_count  else "",
+        ])) or "No problems yet"
 
-    # Footer
-    lines += [
+        L += [
+            f"<details>",
+            f"<summary><b>{emoji} {label}</b> &nbsp;—&nbsp; {solved}/{goal} solved &nbsp;|&nbsp; {diff_summary}</summary>",
+            "",
+            f"```",
+            f"Progress: [{bar}]",
+            f"```",
+            "",
+        ]
+
+        if problems:
+            L += [
+                "| # | Problem | Difficulty | Solution |",
+                "|---|---------|-----------|----------|",
+            ]
+            for p in sorted(problems, key=lambda x: (x["num"]=="?", int(x["num"]) if x["num"]!="?" else 9999)):
+                de   = DIFF_EMOJI.get(p["diff"], "⬜")
+                slug = lc_slug(p["name"])
+                L.append(
+                    f"| `{p['num']}` "
+                    f"| [{p['name']}](https://leetcode.com/problems/{slug}/) "
+                    f"| {de} {p['diff']} "
+                    f"| [C++](./{p['path']}) |"
+                )
+        else:
+            L += ["> 🚧 No problems yet — coming soon!"]
+
+        L += ["", "</details>", ""]
+
+    L += ["---", ""]
+
+    # ── Footer ────────────────────────────────────────────────────────────────
+    L += [
         '<div align="center">',
+        "",
+        f'  <img src="https://img.shields.io/badge/Keep%20Going-💪-1D9E75?style=flat-square" alt="Keep Going">',
+        "",
+        '  <br><br>',
         '  <i>"The secret of getting ahead is getting started." — Mark Twain</i>',
-        '</div>',
+        "",
+        f'  <br><br>',
+        f'  <sub>⚡ Auto-generated by GitHub Actions on every push · <a href="./.github/scripts/generate_readme.py">view script</a></sub>',
+        "",
+        "</div>",
         "",
     ]
 
-    return "\n".join(lines)
+    return "\n".join(L)
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     topics = scan_problems()
-    readme = generate_readme(topics)
-    out_path = REPO_ROOT / "README.md"
-    out_path.write_text(readme, encoding="utf-8")
-    print(f"✅ README updated — {sum(len(v) for v in topics.values())} problems across {len(topics)} topics")
+    readme = build(topics)
+    out    = REPO_ROOT / "README.md"
+    out.write_text(readme, encoding="utf-8")
+
+    total = sum(len(v) for v in topics.values())
+    print(f"✅ README updated — {total} problems across {len(topics)} topics")
+    for t, ps in sorted(topics.items()):
+        print(f"   {TOPIC_EMOJI.get(t,'📁')} {t}: {len(ps)} problems")
