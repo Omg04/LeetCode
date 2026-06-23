@@ -72,8 +72,8 @@ Progress: [███░░░░░░░░░░░░░░░░░ 14%]
 | `92` | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 🟡 Medium | [C++](./Linked-List/Reverse Linked List II/Reverse_Linked_List_II.cpp) |
 | `1290` | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | 🟢 Easy | [C++](./Linked-List/Convert Binary Number in a Linked List to Integer/Convert_Binary_Number_in_a_Linked_List_to_Integer.cpp) |
 | `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
-| `?` | [Intersection of Two Linked Lists.](https://leetcode.com/problems/intersection-of-two-linked-lists./) | 🟡 Medium | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
-| `?` | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟡 Medium | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
+| `160` | [Intersection of Two Linked Lists.](https://leetcode.com/problems/intersection-of-two-linked-lists./) | 🟡 Medium | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
+| `876` | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟡 Medium | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
 
 </details>
 
