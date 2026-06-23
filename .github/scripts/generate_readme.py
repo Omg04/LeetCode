@@ -7,51 +7,26 @@ import urllib.request
 import json
 
 def fetch_leetcode_stats(username: str) -> dict:
-    """
-    Fetch real solved counts and streak from LeetCode's public GraphQL API.
-    Returns dict with keys: total, easy, medium, hard, streak.
-    Falls back to zeros if the request fails (so the script never crashes).
-    """
-    url = "https://leetcode.com/graphql"
-    query = """
-    query getUserProfile($username: String!) {
-      matchedUser(username: $username) {
-        submitStats: submitStatsGlobal {
-          acSubmissionNum {
-            difficulty
-            count
-          }
-        }
-        userCalendar {
-          streak
-        }
-      }
-    }
-    """
-    payload = json.dumps({"query": query, "variables": {"username": username}}).encode()
-    req = urllib.request.Request(
-        url,
-        data=payload,
-        headers={
-            "Content-Type": "application/json",
-            "User-Agent": "Mozilla/5.0",
-            "Referer": "https://leetcode.com",
-        },
-    )
+   """Fetch stats via alfa-leetcode-api (public proxy, works from CI)."""
+    import urllib.request, json
     try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read())["data"]["matchedUser"]
-            counts = {
-                item["difficulty"]: item["count"]
-                for item in data["submitStats"]["acSubmissionNum"]
-            }
-            return {
-                "total":  counts.get("All", 0),
-                "easy":   counts.get("Easy", 0),
-                "medium": counts.get("Medium", 0),
-                "hard":   counts.get("Hard", 0),
-                "streak": data["userCalendar"]["streak"],
-            }
+        url = f"https://alfa-leetcode-api.onrender.com/{username}/solved"
+        with urllib.request.urlopen(url, timeout=15) as r:
+            d = json.loads(r.read())
+            solved = {item["difficulty"]: item["count"] for item in d.get("solvedProblem", [])}
+
+        url2 = f"https://alfa-leetcode-api.onrender.com/userProfile/{username}"
+        with urllib.request.urlopen(url2, timeout=15) as r:
+            d2 = json.loads(r.read())
+            streak = d2.get("streak", 0)
+
+        return {
+            "total":  solved.get("All", 0),
+            "easy":   solved.get("Easy", 0),
+            "medium": solved.get("Medium", 0),
+            "hard":   solved.get("Hard", 0),
+            "streak": streak,
+        }
     except Exception as e:
         print(f"⚠️  LeetCode API failed: {e} — using repo counts as fallback")
         return {"total": 0, "easy": 0, "medium": 0, "hard": 0, "streak": 0}
