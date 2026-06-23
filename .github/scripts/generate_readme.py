@@ -44,8 +44,8 @@ DIFFICULTY_MAP = {
     "reverse linked list ii":                         ("Medium", "92"),
     "add two numbers":                                ("Medium", "2"),
     "partition list":                                 ("Medium", "86"),
-    "intersection_of_two_linked_lists":               ("Easy",   "160"),
-    "middle_of_the_linked_list":                      ("Easy",   "876"),
+    "intersection of two linked lists":               ("Easy",   "160"),
+    "middle of the linked list":                      ("Easy",   "876"),
     "convert binary number in a linked list to integer": ("Easy","1290"),
     "delete nodes from linked list present in array": ("Medium", "3217"),
 }
