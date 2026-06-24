@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **24 Jun 2026 — 11:28 UTC**
+> 🕐 Last auto-updated: **24 Jun 2026 — 11:32 UTC**
 
 ![Solved](https://img.shields.io/badge/Total%20Solved-11-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-5-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-6-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
@@ -36,7 +36,7 @@
 
 | | Topic | Solved | Progress |
 |--|-------|--------|----------|
-| 🔗 | [Linked List](./Linked-List/) | 11 | `█████░░░░░░░░░░░░░░░░░░░` **11/50** (22%) |
+| 🔗 | [Linked List](./Linked-List/) | 11 | `████░░░░░░░░░░░░░░░░░░░░` **11/66** (17%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -59,10 +59,10 @@
 ## 🗂️ Problems Solved
 
 <details>
-<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 11/50 solved &nbsp;|&nbsp; 🟢 5 Easy · 🟡 6 Medium</summary>
+<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 11/66 solved &nbsp;|&nbsp; 🟢 5 Easy · 🟡 6 Medium</summary>
 
 ```
-Progress: [████░░░░░░░░░░░░░░░░ 22%]
+Progress: [███░░░░░░░░░░░░░░░░░ 17%]
 ```
 
 | # | Problem | Difficulty | Solution |
