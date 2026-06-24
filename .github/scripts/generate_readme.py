@@ -6,6 +6,10 @@ from collections import defaultdict
 import urllib.request
 import json
 
+def normalize(name: str) -> str:
+    """Convert any folder name to a consistent lowercase lookup key."""
+    return name.lower().replace("_", " ").replace("-", " ").strip().rstrip(".")
+    
 def fetch_leetcode_stats(username: str) -> dict:
     """Fetch stats via leetcode-stats-api (more reliable than alfa)."""
     try:
@@ -44,6 +48,8 @@ DIFFICULTY_MAP = {
     "convert binary number in a linked list to integer": ("Easy","1290"),
     "delete nodes from linked list present in array": ("Medium", "3217"),
 }
+
+DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
 
 # Target problem counts per topic (used for progress bars) 
 TOPIC_GOALS = {
@@ -120,13 +126,13 @@ def scan_problems():
             if not cpp_files: continue
 
             name = prob_dir.name
-            key  = name.lower().replace("_", " ").replace("-", " ").strip()
+            key  = normalize(name)
             diff, num = DIFFICULTY_MAP.get(key, ("Medium", "?"))
             rel  = str(cpp_files[0].relative_to(REPO_ROOT)).replace("\\", "/")
 
             topics[topic_dir.name].append({
                 "num":   num,
-                "name":  name.replace("_", " "),
+                "name":  name.replace("_", " ").rstrip("."),
                 "diff":  diff,
                 "topic": topic_dir.name,
                 "path":  rel,
