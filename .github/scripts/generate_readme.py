@@ -26,6 +26,7 @@ GITHUB_USERNAME   = "omg04"   # ← your GitHub username
 # Add new problems here as you solve them:
 # "problem folder name (lowercase)" : ("Difficulty", "LC number")
 DIFFICULTY_MAP = {
+    "rotate list":                                    ("Medium", "61"),
     "remove duplicates from sorted list":             ("Easy","83"),
     "merge two sorted lists":                         ("Easy","21"), 
     "remove nth node from end of list":               ("Medium", "19"),
