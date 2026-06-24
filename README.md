@@ -5,7 +5,7 @@
 > Solving one problem at a time — consistency over perfection.
 > 🕐 Last auto-updated: **24 Jun 2026 — 10:34 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-9-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-4-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-5-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-10-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-4-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-6-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,9 +23,9 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :    9
-  Easy         :    4   ████████░░
-  Medium       :    5   ██████████
+  Total Solved :   10
+  Easy         :    4   ███████░░░
+  Medium       :    6   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    1
 ```
@@ -36,7 +36,7 @@
 
 | | Topic | Solved | Progress |
 |--|-------|--------|----------|
-| 🔗 | [Linked List](./Linked-List/) | 9 | `████░░░░░░░░░░░░░░░░░░░░` **9/50** (18%) |
+| 🔗 | [Linked List](./Linked-List/) | 10 | `█████░░░░░░░░░░░░░░░░░░░` **10/50** (20%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -59,10 +59,10 @@
 ## 🗂️ Problems Solved
 
 <details>
-<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 9/50 solved &nbsp;|&nbsp; 🟢 4 Easy · 🟡 5 Medium</summary>
+<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 10/50 solved &nbsp;|&nbsp; 🟢 4 Easy · 🟡 6 Medium</summary>
 
 ```
-Progress: [████░░░░░░░░░░░░░░░░ 18%]
+Progress: [████░░░░░░░░░░░░░░░░ 20%]
 ```
 
 | # | Problem | Difficulty | Solution |
@@ -76,6 +76,7 @@ Progress: [████░░░░░░░░░░░░░░░░ 18%]
 | `876` | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
 | `1290` | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | 🟢 Easy | [C++](./Linked-List/Convert Binary Number in a Linked List to Integer/Convert_Binary_Number_in_a_Linked_List_to_Integer.cpp) |
 | `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
+| `?` | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 🟡 Medium | [C++](./Linked-List/Remove Duplicates from Sorted List/Remove_Duplicates_from_Sorted_List.cpp) |
 
 </details>
 
