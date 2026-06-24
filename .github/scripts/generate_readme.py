@@ -51,7 +51,7 @@ DIFFICULTY_MAP = {
     "delete nodes from linked list present in array": ("Medium", "3217"),
 }
 
-# Target problem counts per topic (used for progress bars)
+# Target problem counts per topic (used for progress bars) 
 TOPIC_GOALS = {
     "Linked-List":         50,
     "Arrays":              50,
