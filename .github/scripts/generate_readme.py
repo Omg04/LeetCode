@@ -43,7 +43,7 @@ DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
 
 # Target problem counts per topic (used for progress bars) 
 TOPIC_GOALS = {
-    "Linked-List":         50,
+    "Linked-List":         66,
     "Arrays":              50,
     "Strings":             40,
     "Trees":               40,
