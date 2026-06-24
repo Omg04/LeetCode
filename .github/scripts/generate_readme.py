@@ -11,22 +11,10 @@ def normalize(name: str) -> str:
     return name.lower().replace("_", " ").replace("-", " ").strip().rstrip(".")
     
 def fetch_leetcode_stats(username: str) -> dict:
-    """Fetch stats via leetcode-stats-api (more reliable than alfa)."""
-    try:
-        url = f"https://leetcode-stats-api.herokuapp.com/{username}"
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            d = json.loads(r.read())
-            return {
-                "total":  d.get("totalSolved", 0),
-                "easy":   d.get("easySolved", 0),
-                "medium": d.get("mediumSolved", 0),
-                "hard":   d.get("hardSolved", 0),
-                "streak": d.get("streak", 0),
-            }
-    except Exception as e:
-        print(f"⚠️  LeetCode API failed: {e} — using repo counts as fallback")
-        return {"total": 0, "easy": 0, "medium": 0, "hard": 0, "streak": 0}
+    """Stats are derived from the repo scan — no external API needed.
+    Live stats are handled by the leetcard widget in the README.
+    """
+    return {"total": 0, "easy": 0, "medium": 0, "hard": 0, "streak": 0}
 
 # ── Config ─────────────────────────────────────────────────────────────
 
