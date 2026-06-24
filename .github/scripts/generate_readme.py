@@ -7,25 +7,19 @@ import urllib.request
 import json
 
 def fetch_leetcode_stats(username: str) -> dict:
-    """Fetch stats via alfa-leetcode-api (public proxy, works from CI)."""
+    """Fetch stats via leetcode-stats-api (more reliable than alfa)."""
     try:
-        url = f"https://alfa-leetcode-api.onrender.com/{username}/solved"
-        with urllib.request.urlopen(url, timeout=15) as r:
+        url = f"https://leetcode-stats-api.herokuapp.com/{username}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=20) as r:
             d = json.loads(r.read())
-            solved = {item["difficulty"]: item["count"] for item in d.get("solvedProblem", [])}
-
-        url2 = f"https://alfa-leetcode-api.onrender.com/userProfile/{username}"
-        with urllib.request.urlopen(url2, timeout=15) as r:
-            d2 = json.loads(r.read())
-            streak = d2.get("streak", 0)
-
-        return {
-            "total":  solved.get("All", 0),
-            "easy":   solved.get("Easy", 0),
-            "medium": solved.get("Medium", 0),
-            "hard":   solved.get("Hard", 0),
-            "streak": streak,
-        }
+            return {
+                "total":  d.get("totalSolved", 0),
+                "easy":   d.get("easySolved", 0),
+                "medium": d.get("mediumSolved", 0),
+                "hard":   d.get("hardSolved", 0),
+                "streak": d.get("streak", 0),
+            }
     except Exception as e:
         print(f"⚠️  LeetCode API failed: {e} — using repo counts as fallback")
         return {"total": 0, "easy": 0, "medium": 0, "hard": 0, "streak": 0}
