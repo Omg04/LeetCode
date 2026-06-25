@@ -5,7 +5,7 @@
 > Solving one problem at a time — consistency over perfection.
 > 🕐 Last auto-updated: **25 Jun 2026 — 10:49 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-15-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-5-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-10-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-16-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-5-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-11-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,9 +23,9 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :   15
+  Total Solved :   16
   Easy         :    5   █████░░░░░
-  Medium       :   10   ██████████
+  Medium       :   11   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    1
 ```
@@ -36,7 +36,7 @@
 
 | | Topic | Solved | Progress |
 |--|-------|--------|----------|
-| 🔗 | [Linked List](./Linked-List/) | 15 | `█████░░░░░░░░░░░░░░░░░░░` **15/66** (23%) |
+| 🔗 | [Linked List](./Linked-List/) | 16 | `██████░░░░░░░░░░░░░░░░░░` **16/66** (24%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -59,10 +59,10 @@
 ## 🗂️ Problems Solved
 
 <details>
-<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 15/66 solved &nbsp;|&nbsp; 🟢 5 Easy · 🟡 10 Medium</summary>
+<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 16/66 solved &nbsp;|&nbsp; 🟢 5 Easy · 🟡 11 Medium</summary>
 
 ```
-Progress: [█████░░░░░░░░░░░░░░░ 23%]
+Progress: [█████░░░░░░░░░░░░░░░ 24%]
 ```
 
 | # | Problem | Difficulty | Solution |
@@ -80,6 +80,7 @@ Progress: [█████░░░░░░░░░░░░░░░ 23%]
 | `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
 | `?` | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 🟡 Medium | [C++](./Linked-List/Linked List Cycle/Linked_List_Cycle.cpp) |
 | `?` | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | 🟡 Medium | [C++](./Linked-List/Remove Duplicates from Sorted List II/Remove_Duplicates_from_Sorted_List_II.cpp) |
+| `?` | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | 🟡 Medium | [C++](./Linked-List/Remove Linked List Elements/Remove_Linked_List_Elements.cpp) |
 | `?` | [Reorder List](https://leetcode.com/problems/reorder-list/) | 🟡 Medium | [C++](./Linked-List/Reorder List/Reorder_List.cpp) |
 | `?` | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 🟡 Medium | [C++](./Linked-List/Swap Nodes in Pairs/Swap_Nodes_in_Pairs.cpp) |
 
