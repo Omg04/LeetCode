@@ -26,6 +26,16 @@ GITHUB_USERNAME   = "omg04"   # ← your GitHub username
 # Add new problems here as you solve them:
 # "problem folder name (lowercase)" : ("Difficulty", "LC number")
 DIFFICULTY_MAP = {
+    "remove nodes from linked list":                  ("Medium", "2487"),
+    "maximum twin sum of a linked list":              ("Medium", "2130"),
+    "delete the middle node of a linked list":        ("Medium", "2095"),
+    "swapping nodes in a linked list":                ("Medium", "1721"),
+    "palindrome linked list":                         ("Easy", "234"),
+    "remove linked list elements":                    ("Easy", "203"),
+    "reorder list":                                   ("Medium", "143"),
+    "linked list cycle":                              ("Easy", "141"),
+    "remove duplicates from sorted list ii":          ("Medium", "82"),
+    "swap nodes in pairs":                            ("Medium", "24"),
     "rotate list":                                    ("Medium", "61"),
     "remove duplicates from sorted list":             ("Easy","83"),
     "merge two sorted lists":                         ("Easy","21"), 
@@ -33,7 +43,7 @@ DIFFICULTY_MAP = {
     "reverse linked list ii":                         ("Medium", "92"),
     "add two numbers":                                ("Medium", "2"),
     "partition list":                                 ("Medium", "86"),
-    "intersection of two linked lists.":               ("Easy",   "160"),
+    "intersection of two linked lists.":              ("Easy",   "160"),
     "middle of the linked list":                      ("Easy",   "876"),
     "convert binary number in a linked list to integer": ("Easy","1290"),
     "delete nodes from linked list present in array": ("Medium", "3217"),
