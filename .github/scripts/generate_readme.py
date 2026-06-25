@@ -52,6 +52,7 @@ DIFFICULTY_MAP = {
     "remove nodes from linked list":                  ("Medium", "2487"),
     "delete nodes from linked list present in array": ("Medium", "3217"),
     "insert greatest common divisors in linked list": ("Medium", "2807"),
+    "merge nodes in between zeros":                   ("Medium", "2181"),
 }
 
 DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
