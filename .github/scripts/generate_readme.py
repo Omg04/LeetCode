@@ -26,26 +26,30 @@ GITHUB_USERNAME   = "omg04"   # ← your GitHub username
 # Add new problems here as you solve them:
 # "problem folder name (lowercase)" : ("Difficulty", "LC number")
 DIFFICULTY_MAP = {
-    "remove nodes from linked list":                  ("Medium", "2487"),
-    "maximum twin sum of a linked list":              ("Medium", "2130"),
-    "delete the middle node of a linked list":        ("Medium", "2095"),
-    "swapping nodes in a linked list":                ("Medium", "1721"),
-    "palindrome linked list":                         ("Easy", "234"),
-    "remove linked list elements":                    ("Easy", "203"),
-    "reorder list":                                   ("Medium", "143"),
+     # --- EASY ---
+    "merge two sorted lists":                         ("Easy", "21"),
     "linked list cycle":                              ("Easy", "141"),
-    "remove duplicates from sorted list ii":          ("Medium", "82"),
-    "swap nodes in pairs":                            ("Medium", "24"),
-    "rotate list":                                    ("Medium", "61"),
-    "remove duplicates from sorted list":             ("Easy","83"),
-    "merge two sorted lists":                         ("Easy","21"), 
-    "remove nth node from end of list":               ("Medium", "19"),
-    "reverse linked list ii":                         ("Medium", "92"),
+    "remove linked list elements":                    ("Easy", "203"),
+    "palindrome linked list":                         ("Easy", "234"),
+    "remove duplicates from sorted list":             ("Easy", "83"),
+    "intersection of two linked lists.":              ("Easy", "160"),
+    "middle of the linked list":                      ("Easy", "876"),
+    "convert binary number in a linked list to integer": ("Easy", "1290"),
+    "reverse linked list":                            ("Easy", "206"),
+    
+    # --- MEDIUM ---
     "add two numbers":                                ("Medium", "2"),
+    "swap nodes in pairs":                            ("Medium", "24"),
+    "reverse linked list ii":                         ("Medium", "92"),
+    "remove duplicates from sorted list ii":          ("Medium", "82"),
     "partition list":                                 ("Medium", "86"),
-    "intersection of two linked lists.":              ("Easy",   "160"),
-    "middle of the linked list":                      ("Easy",   "876"),
-    "convert binary number in a linked list to integer": ("Easy","1290"),
+    "rotate list":                                    ("Medium", "61"),
+    "remove nth node from end of list":               ("Medium", "19"),
+    "reorder list":                                   ("Medium", "143"),
+    "swapping nodes in a linked list":                ("Medium", "1721"),
+    "delete the middle node of a linked list":        ("Medium", "2095"),
+    "maximum twin sum of a linked list":              ("Medium", "2130"),
+    "remove nodes from linked list":                  ("Medium", "2487"),
     "delete nodes from linked list present in array": ("Medium", "3217"),
 }
 
