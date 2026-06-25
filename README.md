@@ -3,9 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **25 Jun 2026 — 11:10 UTC**
+> 🕐 Last auto-updated: **25 Jun 2026 — 11:14 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-22-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-8-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-14-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-22-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-9-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-13-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -24,8 +24,8 @@
 
 ```
   Total Solved :   22
-  Easy         :    8   ██████░░░░
-  Medium       :   14   ██████████
+  Easy         :    9   ███████░░░
+  Medium       :   13   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    1
 ```
@@ -59,7 +59,7 @@
 ## 🗂️ Problems Solved
 
 <details>
-<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 22/66 solved &nbsp;|&nbsp; 🟢 8 Easy · 🟡 14 Medium</summary>
+<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 22/66 solved &nbsp;|&nbsp; 🟢 9 Easy · 🟡 13 Medium</summary>
 
 ```
 Progress: [███████░░░░░░░░░░░░░ 33%]
@@ -80,6 +80,7 @@ Progress: [███████░░░░░░░░░░░░░ 33%]
 | `143` | [Reorder List](https://leetcode.com/problems/reorder-list/) | 🟡 Medium | [C++](./Linked-List/Reorder List/Reorder_List.cpp) |
 | `160` | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 🟢 Easy | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
 | `203` | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | 🟢 Easy | [C++](./Linked-List/Remove Linked List Elements/Remove_Linked_List_Elements.cpp) |
+| `206` | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 🟢 Easy | [C++](./Linked-List/Reverse Linked List/Reverse_Linked_List.cpp) |
 | `234` | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | 🟢 Easy | [C++](./Linked-List/Palindrome Linked List/Palindrome_Linked_List.cpp) |
 | `876` | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
 | `1290` | [Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | 🟢 Easy | [C++](./Linked-List/Convert Binary Number in a Linked List to Integer/Convert_Binary_Number_in_a_Linked_List_to_Integer.cpp) |
@@ -88,7 +89,6 @@ Progress: [███████░░░░░░░░░░░░░ 33%]
 | `2130` | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | 🟡 Medium | [C++](./Linked-List/Maximum Twin Sum of a Linked List/Maximum_Twin_Sum_of_a_Linked_List.cpp) |
 | `2487` | [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | 🟡 Medium | [C++](./Linked-List/Remove Nodes From Linked List/Remove_Nodes_From_Linked_List.cpp) |
 | `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
-| `?` | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 🟡 Medium | [C++](./Linked-List/Reverse Linked List/Reverse_Linked_List.cpp) |
 
 </details>
 
