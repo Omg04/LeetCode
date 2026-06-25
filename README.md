@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **25 Jun 2026 — 20:53 UTC**
+> 🕐 Last auto-updated: **25 Jun 2026 — 20:54 UTC**
 
 ![Solved](https://img.shields.io/badge/Total%20Solved-23-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-9-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-14-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
@@ -88,8 +88,8 @@ Progress: [███████░░░░░░░░░░░░░ 35%]
 | `2095` | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | 🟡 Medium | [C++](./Linked-List/Delete the Middle Node of a Linked List/Delete_the_Middle_Node_of_a_Linked_List.cpp) |
 | `2130` | [Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | 🟡 Medium | [C++](./Linked-List/Maximum Twin Sum of a Linked List/Maximum_Twin_Sum_of_a_Linked_List.cpp) |
 | `2487` | [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | 🟡 Medium | [C++](./Linked-List/Remove Nodes From Linked List/Remove_Nodes_From_Linked_List.cpp) |
+| `2807` | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) | 🟡 Medium | [C++](./Linked-List/Insert Greatest Common Divisors in Linked List/Insert_Greatest_Common_Divisors_in_Linked_List.cpp) |
 | `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
-| `?` | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) | 🟡 Medium | [C++](./Linked-List/Insert Greatest Common Divisors in Linked List/Insert_Greatest_Common_Divisors_in_Linked_List.cpp) |
 
 </details>
 
