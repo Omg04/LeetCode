@@ -54,6 +54,7 @@ DIFFICULTY_MAP = {
     "insert greatest common divisors in linked list": ("Medium", "2807"),
     "merge nodes in between zeros":                   ("Medium", "2181"),
     "delete node in a linked list":                   ("Medium", "237"),
+    "merge in between linked lists":                  ("Medium", "1669"),
 }
 
 DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
