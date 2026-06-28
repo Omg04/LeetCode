@@ -56,6 +56,7 @@ DIFFICULTY_MAP = {
     "delete node in a linked list":                   ("Medium", "237"),
     "merge in between linked lists":                  ("Medium", "1669"),
     "spiral matrix iv":                               ("Medium", "2326"),
+    "Split Linked List in Parts":                     ("Medium", "725"),
 }
 
 DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
