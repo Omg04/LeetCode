@@ -3,9 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **01 Jul 2026 — 16:39 UTC**
+> 🕐 Last auto-updated: **01 Jul 2026 — 16:40 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-29-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-9-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-20-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-30-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-9-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-21-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,9 +23,9 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :   29
+  Total Solved :   30
   Easy         :    9   ████░░░░░░
-  Medium       :   20   ██████████
+  Medium       :   21   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    1
 ```
@@ -36,7 +36,7 @@
 
 | | Topic | Solved | Progress |
 |--|-------|--------|----------|
-| 🔗 | [Linked List](./Linked-List/) | 29 | `███████████░░░░░░░░░░░░░` **29/66** (44%) |
+| 🔗 | [Linked List](./Linked-List/) | 30 | `███████████░░░░░░░░░░░░░` **30/66** (45%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -59,10 +59,10 @@
 ## 🗂️ Problems Solved
 
 <details>
-<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 29/66 solved &nbsp;|&nbsp; 🟢 9 Easy · 🟡 20 Medium</summary>
+<summary><b>🔗 Linked List</b> &nbsp;—&nbsp; 30/66 solved &nbsp;|&nbsp; 🟢 9 Easy · 🟡 21 Medium</summary>
 
 ```
-Progress: [█████████░░░░░░░░░░░ 44%]
+Progress: [█████████░░░░░░░░░░░ 45%]
 ```
 
 | # | Problem | Difficulty | Solution |
@@ -77,6 +77,7 @@ Progress: [█████████░░░░░░░░░░░ 44%]
 | `86` | [Partition List](https://leetcode.com/problems/partition-list/) | 🟡 Medium | [C++](./Linked-List/Partition List/Partition_List.cpp) |
 | `92` | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 🟡 Medium | [C++](./Linked-List/Reverse Linked List II/Reverse_Linked_List_II.cpp) |
 | `141` | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 🟢 Easy | [C++](./Linked-List/Linked List Cycle/Linked_List_Cycle.cpp) |
+| `142` | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | 🟡 Medium | [C++](./Linked-List/Linked List Cycle II/Linked_List_Cycle_II.cpp) |
 | `143` | [Reorder List](https://leetcode.com/problems/reorder-list/) | 🟡 Medium | [C++](./Linked-List/Reorder List/Reorder_List.cpp) |
 | `160` | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 🟢 Easy | [C++](./Linked-List/Intersection_of_Two_Linked_Lists./Intersection_of_Two_Linked_Lists.cpp) |
 | `203` | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | 🟢 Easy | [C++](./Linked-List/Remove Linked List Elements/Remove_Linked_List_Elements.cpp) |
