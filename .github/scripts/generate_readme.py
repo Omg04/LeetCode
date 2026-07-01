@@ -58,6 +58,7 @@ DIFFICULTY_MAP = {
     "spiral matrix iv":                               ("Medium", "2326"),
     "Split Linked List in Parts":                     ("Medium", "725"),
     "Find the Minimum and Maximum Number of Nodes Between Critical Points": ("Medium", "2058"),
+    "Linked List Cycle II":                           ("Medium", "142"),
 }
 
 DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
