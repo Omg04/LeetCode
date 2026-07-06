@@ -60,6 +60,7 @@ DIFFICULTY_MAP = {
     "Find the Minimum and Maximum Number of Nodes Between Critical Points": ("Medium", "2058"),
     "linked list cycle ii":                           ("Medium", "142"),
     "reverse nodes in even length groups":            ("Medium", "2074"),
+    "odd even linked list":                           ("Medium", "328"),
 }
 
 DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
