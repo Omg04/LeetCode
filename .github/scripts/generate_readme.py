@@ -61,6 +61,7 @@ DIFFICULTY_MAP = {
     "linked list cycle ii":                           ("Medium", "142"),
     "reverse nodes in even length groups":            ("Medium", "2074"),
     "odd even linked list":                           ("Medium", "328"),
+    "next greater node in linked list":               ("Medium", "1019"),
 }
 
 DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
