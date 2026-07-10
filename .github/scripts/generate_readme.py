@@ -63,6 +63,7 @@ DIFFICULTY_MAP = {
     "odd even linked list":                           ("Medium", "328"),
     "next greater node in linked list":               ("Medium", "1019"),
     "double a number represented as a linked list":   ("Medium", "2816"),
+    "add two numbers ii":                             ("Medium", "445"),
 }
 
 DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
