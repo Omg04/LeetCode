@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **10 Jul 2026 — 17:26 UTC**
+> 🕐 Last auto-updated: **10 Jul 2026 — 17:28 UTC**
 
 ![Solved](https://img.shields.io/badge/Total%20Solved-35-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-9-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-26-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
@@ -85,6 +85,7 @@ Progress: [███████████░░░░░░░░░ 53%]
 | `234` | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | 🟢 Easy | [C++](./Linked-List/Palindrome Linked List/Palindrome_Linked_List.cpp) |
 | `237` | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | 🟡 Medium | [C++](./Linked-List/Delete Node in a Linked List/Delete_Node_in_a_Linked_List.cpp) |
 | `328` | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | 🟡 Medium | [C++](./Linked-List/Odd Even Linked List/Odd_Even_Linked_List.cpp) |
+| `445` | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) | 🟡 Medium | [C++](./Linked-List/Add Two Numbers II/Add_Two_Numbers_II.cpp) |
 | `725` | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/) | 🟡 Medium | [C++](./Linked-List/Split Linked List in Parts/Split_Linked_List_in_Parts.cpp) |
 | `876` | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy | [C++](./Linked-List/Middle_of_the_Linked_List/Middle_of_the_Linked_List.cpp) |
 | `1019` | [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/) | 🟡 Medium | [C++](./Linked-List/Next Greater Node In Linked List/Next_Greater_Node_In_Linked_List.cpp) |
@@ -101,7 +102,6 @@ Progress: [███████████░░░░░░░░░ 53%]
 | `2807` | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) | 🟡 Medium | [C++](./Linked-List/Insert Greatest Common Divisors in Linked List/Insert_Greatest_Common_Divisors_in_Linked_List.cpp) |
 | `2816` | [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | 🟡 Medium | [C++](./Linked-List/Double a Number Represented as a Linked List/Double_a_Number_Represented_as_a_Linked_List.cpp) |
 | `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
-| `?` | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) | 🟡 Medium | [C++](./Linked-List/Add Two Numbers II/Add_Two_Numbers_II.cpp) |
 
 </details>
 
