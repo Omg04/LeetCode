@@ -1,4 +1,5 @@
 {
-    "employees earning more than their managers": ["Easy", "181"],
-     "number of unique subjects taught by each teacher": ["Easy", "2356"]
+    "employees earning more than their managers":       ["Easy", "181"],
+    "number of unique subjects taught by each teacher": ["Easy", "2356"],
+    "daily leads and partners":                         ["Easy", "1693"]
 }
