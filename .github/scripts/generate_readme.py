@@ -113,7 +113,7 @@ def scan_problems():
 
         for prob_dir in sorted(topic_dir.iterdir()):
             if not prob_dir.is_dir(): continue
-            cpp_files = list(prob_dir.glob("*.cpp")) + list(prob_dir.glob("*.sql"))
+            cpp_files = list(prob_dir.glob("*.cpp")) + list(prob_dir.glob("*.sql")) + list(prob_dir.glob("*.mysql"))
             if not cpp_files: continue
 
             name = prob_dir.name
@@ -298,7 +298,7 @@ def build(topics):
                     f"| `{p['num']}` "
                     f"| [{p['name']}](https://leetcode.com/problems/{slug}/) "
                     f"| {de} {p['diff']} "
-                    f"| [C++](./{p['path']}) |"
+                    f"| [{'SQL' if p['path'].endswith(('.sql','.mysql')) else 'C++'}](./{p['path']}) |"
                 )
         else:
             L += ["> 🚧 No problems yet — coming soon!"]
