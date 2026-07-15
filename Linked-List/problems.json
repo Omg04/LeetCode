@@ -36,5 +36,5 @@
     "next greater node in linked list":               ["Medium", "1019"],
     "double a number represented as a linked list":   ["Medium", "2816"],
     "add two numbers ii":                             ["Medium", "445"],
-    "linked list components":                         ["Medium", "817"],
+    "linked list components":                         ["Medium", "817"]
 }
