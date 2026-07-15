@@ -31,6 +31,7 @@ DIFFICULTY_MAP = {normalize(k): v for k, v in DIFFICULTY_MAP.items()}
 
 # Target problem counts per topic (used for progress bars) 
 TOPIC_GOALS = {
+    "SQL":                 105,
     "Linked-List":         66,
     "Arrays":              50,
     "Strings":             40,
@@ -44,6 +45,7 @@ TOPIC_GOALS = {
 }
 
 TOPIC_EMOJI = {
+    "SQL":                 "🐬",
     "Linked-List":         "🔗",
     "Arrays":              "📦",
     "Strings":             "🔤",
@@ -111,7 +113,7 @@ def scan_problems():
 
         for prob_dir in sorted(topic_dir.iterdir()):
             if not prob_dir.is_dir(): continue
-            cpp_files = list(prob_dir.glob("*.cpp"))
+            cpp_files = list(prob_dir.glob("*.cpp")) + list(prob_dir.glob("*.sql"))
             if not cpp_files: continue
 
             name = prob_dir.name
