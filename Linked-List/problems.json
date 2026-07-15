@@ -1,5 +1,4 @@
 {
-     // --- EASY ---
     "merge two sorted lists":                         ["Easy", "21"],
     "linked list cycle":                              ["Easy", "141"],
     "remove linked list elements":                    ["Easy", "203"],
@@ -9,8 +8,8 @@
     "middle of the linked list":                      ["Easy", "876"],
     "convert binary number in a linked list to integer": ["Easy", "1290"],
     "reverse linked list":                            ["Easy", "206"],
-    
-    // --- MEDIUM ---
+
+     
     "add two numbers":                                ["Medium", "2"],
     "swap nodes in pairs":                            ["Medium", "24"],
     "reverse linked list ii":                         ["Medium", "92"],
