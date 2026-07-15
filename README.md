@@ -3,9 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **15 Jul 2026 — 11:12 UTC**
+> 🕐 Last auto-updated: **15 Jul 2026 — 11:39 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-37-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-10-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-27-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-38-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-10-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-28-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,9 +23,9 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :   37
+  Total Solved :   38
   Easy         :   10   ████░░░░░░
-  Medium       :   27   ██████████
+  Medium       :   28   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    2
 ```
@@ -37,7 +37,7 @@
 | | Topic | Solved | Progress |
 |--|-------|--------|----------|
 | 🔗 | [Linked List](./Linked-List/) | 36 | `█████████████░░░░░░░░░░░` **36/66** (55%) |
-| 🐬 | [SQL](./SQL/) | 1 | `░░░░░░░░░░░░░░░░░░░░░░░░` **1/105** (1%) |
+| 🐬 | [SQL](./SQL/) | 2 | `░░░░░░░░░░░░░░░░░░░░░░░░` **2/105** (2%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -108,15 +108,16 @@ Progress: [███████████░░░░░░░░░ 55%]
 </details>
 
 <details>
-<summary><b>🐬 SQL</b> &nbsp;—&nbsp; 1/105 solved &nbsp;|&nbsp; 🟢 1 Easy</summary>
+<summary><b>🐬 SQL</b> &nbsp;—&nbsp; 2/105 solved &nbsp;|&nbsp; 🟢 1 Easy · 🟡 1 Medium</summary>
 
 ```
-Progress: [░░░░░░░░░░░░░░░░░░░░ 1%]
+Progress: [░░░░░░░░░░░░░░░░░░░░ 2%]
 ```
 
 | # | Problem | Difficulty | Solution |
 |---|---------|-----------|----------|
 | `181` | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | 🟢 Easy | [SQL](./SQL/Employees Earning More Than Their Managers/Employees_Earning_More_Than_Their_Managers.mysql) |
+| `?` | [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/) | 🟡 Medium | [SQL](./SQL/Number of Unique Subjects Taught by Each Teacher/Number_of_Unique_Subjects_Taught_by_Each_Teacher.mysql) |
 
 </details>
 
