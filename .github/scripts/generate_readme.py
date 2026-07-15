@@ -138,6 +138,17 @@ def scan_problems():
         if not topic_dir.is_dir(): continue
         if topic_dir.name.startswith(".") or topic_dir.name in skip: continue
 
+        # Load problems.json for this topic if it exists
+        local_map = {}
+        json_path = topic_dir / "problems.json"
+        if json_path.exists():
+            try:
+                with open(json_path, "r", encoding="utf-8") as f:
+                    raw = json.load(f)
+                    local_map = {normalize(k): v for k, v in raw.items()}
+            except Exception as e:
+                print(f"⚠️ Error reading {json_path}: {e}")
+
         for prob_dir in sorted(topic_dir.iterdir()):
             if not prob_dir.is_dir(): continue
             cpp_files = list(prob_dir.glob("*.cpp"))
@@ -145,7 +156,8 @@ def scan_problems():
 
             name = prob_dir.name
             key  = normalize(name)
-            diff, num = DIFFICULTY_MAP.get(key, ("Medium", "?"))
+            entry = local_map.get(key) or DIFFICULTY_MAP.get(key)
+            diff, num = (entry[0], entry[1]) if entry else ("Medium", "?")
             rel  = str(cpp_files[0].relative_to(REPO_ROOT)).replace("\\", "/")
 
             topics[topic_dir.name].append({
