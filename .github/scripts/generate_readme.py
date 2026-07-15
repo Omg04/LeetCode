@@ -132,30 +132,46 @@ def lc_slug(name):
 
 def scan_problems():
     topics = defaultdict(list)
-    skip   = {".git", ".github", "__pycache__", "node_modules"}
-
+    skip = {".git", ".github", "__pycache__", "node_modules"}
+    
     for topic_dir in sorted(REPO_ROOT.iterdir()):
-        if not topic_dir.is_dir(): continue
-        if topic_dir.name.startswith(".") or topic_dir.name in skip: continue
+        if not topic_dir.is_dir() or topic_dir.name.startswith(".") or topic_dir.name in skip:
+            continue
+            
+        # Load local problem metadata map if it exists
+        local_map = {}
+        json_path = topic_dir / "problems.json"
+        if json_path.exists():
+            try:
+                with open(json_path, "r", encoding="utf-8") as f:
+                    raw_map = json.load(f)
+                    local_map = {normalize(k): v for k, v in raw_map.items()}
+            except Exception as e:
+                print(f"⚠️ Error reading {json_path}: {e}")
 
         for prob_dir in sorted(topic_dir.iterdir()):
-            if not prob_dir.is_dir(): continue
-            cpp_files = list(prob_dir.glob("*.cpp"))
-            if not cpp_files: continue
-
+            if not prob_dir.is_dir():
+                continue
+            
+            # Find solution files (.cpp or .sql)
+            solution_files = list(prob_dir.glob("*.cpp")) + list(prob_dir.glob("*.sql"))
+            if not solution_files:
+                continue
+                
             name = prob_dir.name
-            key  = normalize(name)
-            diff, num = DIFFICULTY_MAP.get(key, ("Medium", "?"))
-            rel  = str(cpp_files[0].relative_to(REPO_ROOT)).replace("\\", "/")
-
+            key = normalize(name)
+            
+            # Look up metadata from the local topic map
+            diff, num = local_map.get(key, ("Medium", "?"))
+            rel = str(solution_files[0].relative_to(REPO_ROOT)).replace("\\", "/")
+            
             topics[topic_dir.name].append({
-                "num":   num,
-                "name":  name.replace("_", " ").rstrip("."),
-                "diff":  diff,
+                "num": num,
+                "name": name.replace("_", " ").rstrip("."),
+                "diff": diff,
                 "topic": topic_dir.name,
-                "path":  rel,
+                "path": rel,
             })
-
     return topics
 
 # ── README builder ──────────────────────────────────────────────────────────
