@@ -3,9 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **15 Jul 2026 — 11:56 UTC**
+> 🕐 Last auto-updated: **15 Jul 2026 — 11:57 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-39-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-11-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-28-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-39-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-12-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-27-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -24,8 +24,8 @@
 
 ```
   Total Solved :   39
-  Easy         :   11   ████░░░░░░
-  Medium       :   28   ██████████
+  Easy         :   12   ████░░░░░░
+  Medium       :   27   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    2
 ```
@@ -108,7 +108,7 @@ Progress: [███████████░░░░░░░░░ 55%]
 </details>
 
 <details>
-<summary><b>🐬 SQL</b> &nbsp;—&nbsp; 3/105 solved &nbsp;|&nbsp; 🟢 2 Easy · 🟡 1 Medium</summary>
+<summary><b>🐬 SQL</b> &nbsp;—&nbsp; 3/105 solved &nbsp;|&nbsp; 🟢 3 Easy</summary>
 
 ```
 Progress: [█░░░░░░░░░░░░░░░░░░░ 3%]
@@ -117,8 +117,8 @@ Progress: [█░░░░░░░░░░░░░░░░░░░ 3%]
 | # | Problem | Difficulty | Solution |
 |---|---------|-----------|----------|
 | `181` | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | 🟢 Easy | [SQL](./SQL/Employees Earning More Than Their Managers/Employees_Earning_More_Than_Their_Managers.mysql) |
+| `1693` | [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/) | 🟢 Easy | [SQL](./SQL/Daily Leads and Partners/Daily_Leads_and_Partners.mysql) |
 | `2356` | [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/) | 🟢 Easy | [SQL](./SQL/Number of Unique Subjects Taught by Each Teacher/Number_of_Unique_Subjects_Taught_by_Each_Teacher.mysql) |
-| `?` | [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/) | 🟡 Medium | [SQL](./SQL/Daily Leads and Partners/Daily_Leads_and_Partners.mysql) |
 
 </details>
 
