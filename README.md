@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **16 Jul 2026 — 12:18 UTC**
+> 🕐 Last auto-updated: **16 Jul 2026 — 12:20 UTC**
 
 ![Solved](https://img.shields.io/badge/Total%20Solved-41-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-12-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-29-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
@@ -77,6 +77,8 @@ Progress: [████████████░░░░░░░░ 58%]
 | `83` | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 🟢 Easy | [C++](./Linked-List/Remove Duplicates from Sorted List/Remove_Duplicates_from_Sorted_List.cpp) |
 | `86` | [Partition List](https://leetcode.com/problems/partition-list/) | 🟡 Medium | [C++](./Linked-List/Partition List/Partition_List.cpp) |
 | `92` | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 🟡 Medium | [C++](./Linked-List/Reverse Linked List II/Reverse_Linked_List_II.cpp) |
+| `116` | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | 🟡 Medium | [C++](./Linked-List/Populating Next Right Pointers in Each Node/Populating_Next_Right_Pointers_in_Each_Node.cpp) |
+| `117` | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | 🟡 Medium | [C++](./Linked-List/Populating Next Right Pointers in Each Node II/Populating_Next_Right_Pointers_in_Each_Node_II.cpp) |
 | `141` | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 🟢 Easy | [C++](./Linked-List/Linked List Cycle/Linked_List_Cycle.cpp) |
 | `142` | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | 🟡 Medium | [C++](./Linked-List/Linked List Cycle II/Linked_List_Cycle_II.cpp) |
 | `143` | [Reorder List](https://leetcode.com/problems/reorder-list/) | 🟡 Medium | [C++](./Linked-List/Reorder List/Reorder_List.cpp) |
@@ -104,8 +106,6 @@ Progress: [████████████░░░░░░░░ 58%]
 | `2807` | [Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) | 🟡 Medium | [C++](./Linked-List/Insert Greatest Common Divisors in Linked List/Insert_Greatest_Common_Divisors_in_Linked_List.cpp) |
 | `2816` | [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | 🟡 Medium | [C++](./Linked-List/Double a Number Represented as a Linked List/Double_a_Number_Represented_as_a_Linked_List.cpp) |
 | `3217` | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 🟡 Medium | [C++](./Linked-List/Delete Nodes From Linked List Present in Array/Delete_Nodes_From_Linked_List_Present_in_Array.cpp) |
-| `?` | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | 🟡 Medium | [C++](./Linked-List/Populating Next Right Pointers in Each Node/Populating_Next_Right_Pointers_in_Each_Node.cpp) |
-| `?` | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | 🟡 Medium | [C++](./Linked-List/Populating Next Right Pointers in Each Node II/Populating_Next_Right_Pointers_in_Each_Node_II.cpp) |
 
 </details>
 
