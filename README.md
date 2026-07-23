@@ -5,7 +5,7 @@
 > Solving one problem at a time — consistency over perfection.
 > 🕐 Last auto-updated: **23 Jul 2026 — 17:21 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-41-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-12-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-29-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-42-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-13-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-29-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,11 +23,11 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :   41
-  Easy         :   12   ████░░░░░░
+  Total Solved :   42
+  Easy         :   13   ████░░░░░░
   Medium       :   29   ██████████
   Hard         :    0   ░░░░░░░░░░
-  Topics       :    2
+  Topics       :    3
 ```
 
 ---
@@ -38,6 +38,7 @@
 |--|-------|--------|----------|
 | 🔗 | [Linked List](./Linked-List/) | 38 | `██████████████░░░░░░░░░░` **38/66** (58%) |
 | 🐬 | [SQL](./SQL/) | 3 | `█░░░░░░░░░░░░░░░░░░░░░░░` **3/105** (3%) |
+| 📁 | [Stack](./Stack/) | 1 | `░░░░░░░░░░░░░░░░░░░░░░░░` **1/50** (2%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -121,6 +122,19 @@ Progress: [█░░░░░░░░░░░░░░░░░░░ 3%]
 | `181` | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | 🟢 Easy | [SQL](./SQL/Employees Earning More Than Their Managers/Employees_Earning_More_Than_Their_Managers.mysql) |
 | `1693` | [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/) | 🟢 Easy | [SQL](./SQL/Daily Leads and Partners/Daily_Leads_and_Partners.mysql) |
 | `2356` | [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/) | 🟢 Easy | [SQL](./SQL/Number of Unique Subjects Taught by Each Teacher/Number_of_Unique_Subjects_Taught_by_Each_Teacher.mysql) |
+
+</details>
+
+<details>
+<summary><b>📁 Stack</b> &nbsp;—&nbsp; 1/50 solved &nbsp;|&nbsp; 🟢 1 Easy</summary>
+
+```
+Progress: [░░░░░░░░░░░░░░░░░░░░ 2%]
+```
+
+| # | Problem | Difficulty | Solution |
+|---|---------|-----------|----------|
+| `2000` | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | 🟢 Easy | [C++](./Stack/Reverse Prefix of Word/Reverse_Prefix_of_Word.cpp) |
 
 </details>
 
