@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **23 Jul 2026 — 17:21 UTC**
+> 🕐 Last auto-updated: **23 Jul 2026 — 17:27 UTC**
 
 ![Solved](https://img.shields.io/badge/Total%20Solved-42-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-13-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-29-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
@@ -38,13 +38,13 @@
 |--|-------|--------|----------|
 | 🔗 | [Linked List](./Linked-List/) | 38 | `██████████████░░░░░░░░░░` **38/66** (58%) |
 | 🐬 | [SQL](./SQL/) | 3 | `█░░░░░░░░░░░░░░░░░░░░░░░` **3/105** (3%) |
-| 📁 | [Stack](./Stack/) | 1 | `░░░░░░░░░░░░░░░░░░░░░░░░` **1/50** (2%) |
+| 📥 | [Stack](./Stack/) | 1 | `░░░░░░░░░░░░░░░░░░░░░░░░` **1/131** (1%) |
+| 📤 | Queue | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🌲 | Trees | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
 | 🧮 | Dynamic Programming | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/60** (0%) |
 | 📊 | Graphs | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
-| 📚 | Stack Queue | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/30** (0%) |
 | 🏔️ | Heap | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/25** (0%) |
 | 🔍 | Binary Search | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/30** (0%) |
 | 🔄 | Backtracking | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/25** (0%) |
@@ -126,10 +126,10 @@ Progress: [█░░░░░░░░░░░░░░░░░░░ 3%]
 </details>
 
 <details>
-<summary><b>📁 Stack</b> &nbsp;—&nbsp; 1/50 solved &nbsp;|&nbsp; 🟢 1 Easy</summary>
+<summary><b>📥 Stack</b> &nbsp;—&nbsp; 1/131 solved &nbsp;|&nbsp; 🟢 1 Easy</summary>
 
 ```
-Progress: [░░░░░░░░░░░░░░░░░░░░ 2%]
+Progress: [░░░░░░░░░░░░░░░░░░░░ 1%]
 ```
 
 | # | Problem | Difficulty | Solution |
