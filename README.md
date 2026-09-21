@@ -3,9 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **24 Jul 2026 — 11:52 UTC**
+> 🕐 Last auto-updated: **21 Sep 2026 — 06:06 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-43-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-14-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-29-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-44-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-14-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-30-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,9 +23,9 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :   43
+  Total Solved :   44
   Easy         :   14   █████░░░░░
-  Medium       :   29   ██████████
+  Medium       :   30   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    3
 ```
@@ -38,7 +38,7 @@
 |--|-------|--------|----------|
 | 🔗 | [Linked List](./Linked-List/) | 38 | `██████████████░░░░░░░░░░` **38/66** (58%) |
 | 🐬 | [SQL](./SQL/) | 3 | `█░░░░░░░░░░░░░░░░░░░░░░░` **3/105** (3%) |
-| 📥 | [Stack](./Stack/) | 2 | `░░░░░░░░░░░░░░░░░░░░░░░░` **2/131** (2%) |
+| 📥 | [Stack](./Stack/) | 3 | `█░░░░░░░░░░░░░░░░░░░░░░░` **3/131** (2%) |
 | 📤 | Queue | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -126,7 +126,7 @@ Progress: [█░░░░░░░░░░░░░░░░░░░ 3%]
 </details>
 
 <details>
-<summary><b>📥 Stack</b> &nbsp;—&nbsp; 2/131 solved &nbsp;|&nbsp; 🟢 2 Easy</summary>
+<summary><b>📥 Stack</b> &nbsp;—&nbsp; 3/131 solved &nbsp;|&nbsp; 🟢 2 Easy · 🟡 1 Medium</summary>
 
 ```
 Progress: [░░░░░░░░░░░░░░░░░░░░ 2%]
@@ -136,6 +136,7 @@ Progress: [░░░░░░░░░░░░░░░░░░░░ 2%]
 |---|---------|-----------|----------|
 | `682` | [Baseball Game](https://leetcode.com/problems/baseball-game/) | 🟢 Easy | [C++](./Stack/Baseball Game/Baseball_Game.cpp) |
 | `2000` | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | 🟢 Easy | [C++](./Stack/Reverse Prefix of Word/Reverse_Prefix_of_Word.cpp) |
+| `?` | [Clear Digits](https://leetcode.com/problems/clear-digits/) | 🟡 Medium | [C++](./Stack/Clear Digits/Clear_Digits.cpp) |
 
 </details>
 
