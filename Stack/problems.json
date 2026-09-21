@@ -1,4 +1,5 @@
 {
     "reverse prefix of word":                         ["Easy", "2000"],
-    "baseball game":                                  ["Easy", "682"]
+    "baseball game":                                  ["Easy", "682"],
+    "clear digits":                                   ["Easy", "3174"],
 }
