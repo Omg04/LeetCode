@@ -1,5 +1,8 @@
 {
     "reverse prefix of word":                         ["Easy", "2000"],
     "baseball game":                                  ["Easy", "682"],
-    "clear digits":                                   ["Easy", "3174"]
+    "clear digits":                                   ["Easy", "3174"],
+
+    "Reverse Substrings Between Each Pair of Parentheses": ["Medium", "1190"]
+
 }
