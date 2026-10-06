@@ -3,6 +3,6 @@
     "baseball game":                                  ["Easy", "682"],
     "clear digits":                                   ["Easy", "3174"],
 
-    "reverse substrings between each pair of parentheses": ["Medium", "1190"]
-
+    "reverse substrings between each pair of parentheses": ["Medium", "1190"],
+    "minimum add to make parentheses valid":               ["Medium", "921"]
 }
