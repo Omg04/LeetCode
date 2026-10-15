@@ -2,7 +2,10 @@
     "reverse prefix of word":                         ["Easy", "2000"],
     "baseball game":                                  ["Easy", "682"],
     "clear digits":                                   ["Easy", "3174"],
+    "increasing order search tree":                   ["Easy", "897"],
 
+    
     "reverse substrings between each pair of parentheses": ["Medium", "1190"],
-    "minimum add to make parentheses valid":               ["Medium", "921"]
+    "minimum add to make parentheses valid":          ["Medium", "921"]
+    
 }
