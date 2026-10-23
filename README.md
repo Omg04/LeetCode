@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **23 Oct 2026 — 06:29 UTC**
+> 🕐 Last auto-updated: **23 Oct 2026 — 06:33 UTC**
 
 ![Solved](https://img.shields.io/badge/Total%20Solved-49-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-17-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-32-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
@@ -140,8 +140,8 @@ Progress: [█░░░░░░░░░░░░░░░░░░░ 6%]
 | `1190` | [Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/) | 🟡 Medium | [C++](./Stack/Reverse Substrings Between Each Pair of Parentheses/Reverse_Substrings_Between_Each_Pair_of_Parentheses.cpp) |
 | `1544` | [Make The String Great](https://leetcode.com/problems/make-the-string-great/) | 🟢 Easy | [C++](./Stack/Make The String Great/Make_The_String_Great.cpp) |
 | `2000` | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | 🟢 Easy | [C++](./Stack/Reverse Prefix of Word/Reverse_Prefix_of_Word.cpp) |
+| `2390` | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | 🟡 Medium | [C++](./Stack/Removing Stars From a String/Removing_Stars_From_a_String.cpp) |
 | `3174` | [Clear Digits](https://leetcode.com/problems/clear-digits/) | 🟢 Easy | [C++](./Stack/Clear Digits/Clear_Digits.cpp) |
-| `?` | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | 🟡 Medium | [C++](./Stack/Removing Stars From a String/Removing_Stars_From_a_String.cpp) |
 
 </details>
 
