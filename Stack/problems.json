@@ -7,6 +7,7 @@
 
     
     "reverse substrings between each pair of parentheses": ["Medium", "1190"],
-    "minimum add to make parentheses valid":          ["Medium", "921"]
+    "minimum add to make parentheses valid":          ["Medium", "921"],
+    "removing stars from a string":                   ["Medium", "2390"]
     
 }
