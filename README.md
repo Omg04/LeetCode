@@ -3,7 +3,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **25 Oct 2026 — 17:56 UTC**
+> 🕐 Last auto-updated: **25 Oct 2026 — 17:58 UTC**
 
 ![Solved](https://img.shields.io/badge/Total%20Solved-51-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-17-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-34-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
@@ -134,6 +134,7 @@ Progress: [██░░░░░░░░░░░░░░░░░░ 8%]
 
 | # | Problem | Difficulty | Solution |
 |---|---------|-----------|----------|
+| `503` | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) | 🟡 Medium | [C++](./Stack/Next Greater Element II/Next_Greater_Element_II.cpp) |
 | `682` | [Baseball Game](https://leetcode.com/problems/baseball-game/) | 🟢 Easy | [C++](./Stack/Baseball Game/Baseball_Game.cpp) |
 | `897` | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | 🟢 Easy | [C++](./Stack/Increasing Order Search Tree/Increasing_Order_Search_Tree.cpp) |
 | `921` | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | 🟡 Medium | [C++](./Stack/Minimum Add to Make Parentheses Valid/Minimum_Add_to_Make_Parentheses_Valid.cpp) |
@@ -143,7 +144,6 @@ Progress: [██░░░░░░░░░░░░░░░░░░ 8%]
 | `2000` | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | 🟢 Easy | [C++](./Stack/Reverse Prefix of Word/Reverse_Prefix_of_Word.cpp) |
 | `2390` | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | 🟡 Medium | [C++](./Stack/Removing Stars From a String/Removing_Stars_From_a_String.cpp) |
 | `3174` | [Clear Digits](https://leetcode.com/problems/clear-digits/) | 🟢 Easy | [C++](./Stack/Clear Digits/Clear_Digits.cpp) |
-| `?` | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) | 🟡 Medium | [C++](./Stack/Next Greater Element II/Next_Greater_Element_II.cpp) |
 
 </details>
 
