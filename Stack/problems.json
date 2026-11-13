@@ -10,6 +10,7 @@
     "minimum add to make parentheses valid":          ["Medium", "921"],
     "removing stars from a string":                   ["Medium", "2390"],
     "validate stack sequences":                       ["Medium", "946"],
-    "next greater element ii":                        ["Medium", "503"]
+    "next greater element ii":                        ["Medium", "503"],
+    "maximum binary tree":                            ["Medium", "654"]
     
 }
