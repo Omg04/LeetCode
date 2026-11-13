@@ -5,7 +5,7 @@
 > Solving one problem at a time — consistency over perfection.
 > 🕐 Last auto-updated: **13 Nov 2026 — 07:07 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-53-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-17-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-36-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-52-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-17-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-35-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,9 +23,9 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :   53
+  Total Solved :   52
   Easy         :   17   █████░░░░░
-  Medium       :   36   ██████████
+  Medium       :   35   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    3
 ```
@@ -38,7 +38,7 @@
 |--|-------|--------|----------|
 | 🔗 | [Linked List](./Linked-List/) | 38 | `██████████████░░░░░░░░░░` **38/66** (58%) |
 | 🐬 | [SQL](./SQL/) | 3 | `█░░░░░░░░░░░░░░░░░░░░░░░` **3/105** (3%) |
-| 📥 | [Stack](./Stack/) | 12 | `██░░░░░░░░░░░░░░░░░░░░░░` **12/131** (9%) |
+| 📥 | [Stack](./Stack/) | 11 | `██░░░░░░░░░░░░░░░░░░░░░░` **11/131** (8%) |
 | 📤 | Queue | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -126,10 +126,10 @@ Progress: [█░░░░░░░░░░░░░░░░░░░ 3%]
 </details>
 
 <details>
-<summary><b>📥 Stack</b> &nbsp;—&nbsp; 12/131 solved &nbsp;|&nbsp; 🟢 5 Easy · 🟡 7 Medium</summary>
+<summary><b>📥 Stack</b> &nbsp;—&nbsp; 11/131 solved &nbsp;|&nbsp; 🟢 5 Easy · 🟡 6 Medium</summary>
 
 ```
-Progress: [██░░░░░░░░░░░░░░░░░░ 9%]
+Progress: [██░░░░░░░░░░░░░░░░░░ 8%]
 ```
 
 | # | Problem | Difficulty | Solution |
@@ -145,7 +145,6 @@ Progress: [██░░░░░░░░░░░░░░░░░░ 9%]
 | `2000` | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) | 🟢 Easy | [C++](./Stack/Reverse Prefix of Word/Reverse_Prefix_of_Word.cpp) |
 | `2390` | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | 🟡 Medium | [C++](./Stack/Removing Stars From a String/Removing_Stars_From_a_String.cpp) |
 | `3174` | [Clear Digits](https://leetcode.com/problems/clear-digits/) | 🟢 Easy | [C++](./Stack/Clear Digits/Clear_Digits.cpp) |
-| `?` | [654. Maximum Binary Tree](https://leetcode.com/problems/654.-maximum-binary-tree/) | 🟡 Medium | [C++](./Stack/654. Maximum Binary Tree/Maximum_Binary_Tree.cpp) |
 
 </details>
 
