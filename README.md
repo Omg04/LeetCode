@@ -3,9 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&width=600&lines=Solving+problems+one+commit+at+a+time...;Language%3A+C%2B%2B+%7C+Focus%3A+DSA;Next+target%3A+Arrays+%26+Hashing+%F0%9F%93%A6;Consistency+is+the+key+%F0%9F%94%91)](https://github.com/omg04)
 
 > Solving one problem at a time — consistency over perfection.
-> 🕐 Last auto-updated: **13 Nov 2026 — 07:03 UTC**
+> 🕐 Last auto-updated: **13 Nov 2026 — 07:07 UTC**
 
-![Solved](https://img.shields.io/badge/Total%20Solved-52-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-17-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-35-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Total%20Solved-53-7F77DD?style=for-the-badge)![Easy](https://img.shields.io/badge/Easy-17-1D9E75?style=for-the-badge)![Medium](https://img.shields.io/badge/Medium-36-EF9F27?style=for-the-badge)![Hard](https://img.shields.io/badge/Hard-0-E24B4A?style=for-the-badge)![Streak](https://img.shields.io/badge/Streak-0%20days-FF6B35?style=for-the-badge)![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)![Status](https://img.shields.io/badge/Status-Active-1D9E75?style=for-the-badge)
 
 ---
 
@@ -23,9 +23,9 @@
 ## 🔢 Overview
 
 ```
-  Total Solved :   52
+  Total Solved :   53
   Easy         :   17   █████░░░░░
-  Medium       :   35   ██████████
+  Medium       :   36   ██████████
   Hard         :    0   ░░░░░░░░░░
   Topics       :    3
 ```
@@ -38,7 +38,7 @@
 |--|-------|--------|----------|
 | 🔗 | [Linked List](./Linked-List/) | 38 | `██████████████░░░░░░░░░░` **38/66** (58%) |
 | 🐬 | [SQL](./SQL/) | 3 | `█░░░░░░░░░░░░░░░░░░░░░░░` **3/105** (3%) |
-| 📥 | [Stack](./Stack/) | 11 | `██░░░░░░░░░░░░░░░░░░░░░░` **11/131** (8%) |
+| 📥 | [Stack](./Stack/) | 12 | `██░░░░░░░░░░░░░░░░░░░░░░` **12/131** (9%) |
 | 📤 | Queue | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 📦 | Arrays | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/50** (0%) |
 | 🔤 | Strings | 0 | `░░░░░░░░░░░░░░░░░░░░░░░░` **0/40** (0%) |
@@ -126,15 +126,16 @@ Progress: [█░░░░░░░░░░░░░░░░░░░ 3%]
 </details>
 
 <details>
-<summary><b>📥 Stack</b> &nbsp;—&nbsp; 11/131 solved &nbsp;|&nbsp; 🟢 5 Easy · 🟡 6 Medium</summary>
+<summary><b>📥 Stack</b> &nbsp;—&nbsp; 12/131 solved &nbsp;|&nbsp; 🟢 5 Easy · 🟡 7 Medium</summary>
 
 ```
-Progress: [██░░░░░░░░░░░░░░░░░░ 8%]
+Progress: [██░░░░░░░░░░░░░░░░░░ 9%]
 ```
 
 | # | Problem | Difficulty | Solution |
 |---|---------|-----------|----------|
 | `503` | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) | 🟡 Medium | [C++](./Stack/Next Greater Element II/Next_Greater_Element_II.cpp) |
+| `654` | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | 🟡 Medium | [C++](./Stack/Maximum Binary Tree/Maximum_Binary_Tree.cpp) |
 | `682` | [Baseball Game](https://leetcode.com/problems/baseball-game/) | 🟢 Easy | [C++](./Stack/Baseball Game/Baseball_Game.cpp) |
 | `897` | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | 🟢 Easy | [C++](./Stack/Increasing Order Search Tree/Increasing_Order_Search_Tree.cpp) |
 | `921` | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | 🟡 Medium | [C++](./Stack/Minimum Add to Make Parentheses Valid/Minimum_Add_to_Make_Parentheses_Valid.cpp) |
